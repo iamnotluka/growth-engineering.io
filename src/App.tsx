@@ -24,10 +24,9 @@ function App() {
 					color: "white",
 					background: "black",
 					border: "none",
-					textDecoration: "underline",
 				}}
 			>
-				Book a call
+				Book in a free 15 min consult
 			</button>
 		</div>
 	);
