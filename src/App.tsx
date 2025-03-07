@@ -5,7 +5,7 @@ function App() {
 	return (
 		<div
 			style={{
-				color: "white",
+				color: "black",
 				maxWidth: "500px",
 				margin: "auto",
 				padding: "1.5rem",
@@ -14,7 +14,7 @@ function App() {
 			<Markdown>{copy}</Markdown>
 			<button
 				onClick={() => {
-					window.location.href = "https://calendar.app.google/g4GUafbg2gitqgjVA";
+					window.location.href = "https://calendar.app.google/jT7gSNV1E9HfWLD16";
 				}}
 				style={{
 					width: "100%",
