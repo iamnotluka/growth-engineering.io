@@ -39,7 +39,7 @@ const copy = `
 # growth-engineering.io
 
 ----
-**We help founders and product owners running seven-figure businesses scale to $500-$1M per month.**
+**We help founders and product owners running seven-figure businesses scale to $500k-$1M per month.**
 
 ----
 
