@@ -19,7 +19,7 @@ const Hypothesis = () => {
 								</User>
 							</div>
 						</div>
-						<hr className="h-px mb-5 bg-gray-200 border-0 dark:bg-gray-700" />
+						<hr className="h-px mb-5 mx-auto max-w-[600px] bg-gray-200 border-0 dark:bg-gray-700" />
 
 						<div className="flex justify-center">
 							<Text h2 className="text-sm text-red-50 sm:font-bold sm:text-lg font-medium max-w-[600px] text-left">

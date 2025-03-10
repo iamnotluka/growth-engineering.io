@@ -7,7 +7,7 @@ const CaseStudies = () => {
 		<div>
 			<div className="px-4 pb-10">
 				<div className="text-center h-full">
-					<div className="text-left h-full">
+					<div className="text-left h-full max-w-[600px] mx-auto">
 						<div className="flex justify-left pt-2">
 							<Text h3 className="font-bold max-w-[600px] text-left">
 								Case Studies
