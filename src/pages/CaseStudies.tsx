@@ -15,7 +15,8 @@ const CaseStudies = () => {
 						</div>
 						<div className="flex justify-left pb-4">
 							<Text small className="max-w-[600px] text-left">
-								We Partner with businesses ready to take their business to the next level.
+								We partner with businesses ready to take their business to the next level. Our system worked for them -
+								it'll work for you too.
 							</Text>
 						</div>
 						<hr className="h-px mb-5 bg-gray-200 border-0 dark:bg-gray-700" />
