@@ -3,7 +3,7 @@ import TopNav from "./TopNav";
 import { Home, Info, TrendingUp } from "@geist-ui/icons";
 import CaseStudies from "./pages/CaseStudies";
 import HomePage from "./pages/HomePage";
-import About from "./pages/About";
+import Hypothesis from "./pages/Hypothesis";
 
 const Landing = () => {
 	return (
@@ -25,12 +25,12 @@ const Landing = () => {
 					label={
 						<>
 							<Info />
-							About{" "}
+							Hypothesis{" "}
 						</>
 					}
 					value="2"
 				>
-					<About />
+					<Hypothesis />
 				</Tabs.Item>
 				<Tabs.Item
 					label={
