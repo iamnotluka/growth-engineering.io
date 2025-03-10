@@ -1,4 +1,4 @@
-import { Page, Text } from "@geist-ui/core";
+import { Image, Page, Text } from "@geist-ui/core";
 import Orb from "../components/Orb";
 
 const HomePage = () => {
@@ -18,6 +18,12 @@ const HomePage = () => {
 							</div>
 							<Orb hoverIntensity={0.5} rotateOnHover={true} hue={0} forceHoverState={false} />
 						</div>
+						<div className="flex justify-center mb-8 max-w-[600px] mx-auto">
+							<Image width="90px" height="60px" src="/google_partner.svg" />
+							<Image width="90px" height="60px" src="/meta_partner.svg" />
+							<Image width="90px" height="60px" src="/shopify_partner.svg" />
+							{/* <Image width="70px" height="60px" src="/klayvio_partner.svg" /> */}
+						</div>
 						<div className="flex justify-center">
 							<Text h1 className="text-sm text-red-50 sm:font-bold sm:text-lg font-medium max-w-[600px] text-center">
 								<span className="font-bold">We help founders scale to $500k per month </span>with a systematic,
@@ -25,6 +31,7 @@ const HomePage = () => {
 								<span className="font-bold">engineering, sales and marketing principles.</span>
 							</Text>
 						</div>
+
 						<Text small type="secondary" className="text-xs font-medium max-w-[600px] text-center">
 							© 2025, Growth Engineering Inc.
 						</Text>
