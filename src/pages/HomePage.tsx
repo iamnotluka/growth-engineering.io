@@ -20,9 +20,9 @@ const HomePage = () => {
 						</div>
 						<div className="flex justify-center">
 							<Text h1 className="text-sm text-red-50 sm:font-bold sm:text-lg font-medium max-w-[600px] text-center">
-								<strong>We help founders scale to $500k per month </strong>with a systematic, data-driven approach to
-								growth - guided by
-								<strong> engineering, sales and marketing principles.</strong>
+								<span className="font-bold">We help founders scale to $500k per month </span>with a systematic,
+								data-driven approach to growth - guided by{" "}
+								<span className="font-bold">engineering, sales and marketing principles.</span>
 							</Text>
 						</div>
 						<Text small type="secondary" className="text-xs font-medium max-w-[600px] text-center">
