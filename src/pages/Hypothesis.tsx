@@ -1,11 +1,27 @@
-import { Collapse, Text } from "@geist-ui/core";
+import { Card, Collapse, Text, User } from "@geist-ui/core";
+import { QuestionCircle } from "@geist-ui/icons";
 
 const Hypothesis = () => {
 	return (
 		<div>
-			<div className="px-2">
+			<div className="px-4 pb-10">
 				<div className="text-center h-full">
-					<div className="text-center h-full">
+					<div className="text-left h-full">
+						<div className="flex justify-center pt-2">
+							<Text h3 className=" font-bold max-w-[600px] text-left">
+								Read This To Understand Why What We Do Works
+							</Text>
+						</div>
+						<div className="max-w-[600px] mx-auto">
+							<div className="pb-5 ml-[-9px]">
+								<User
+									src="https://media.licdn.com/dms/image/v2/D5603AQGfETua-OwJpw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1729278552572?e=1747267200&v=beta&t=gXFgfXK6pgW3HvKvhlqzy25zQQ9dKgdYEO4UGjIXvuc"
+									name="Luka"
+								>
+									3 min read · Mar 2025
+								</User>
+							</div>
+						</div>
 						<div className="flex justify-center">
 							<Text h2 className="text-sm text-red-50 sm:font-bold sm:text-lg font-medium max-w-[600px] text-left">
 								<span className="font-bold">We help founders scale to $500k per month </span>with a systematic,
@@ -13,8 +29,6 @@ const Hypothesis = () => {
 								<span className="font-bold">engineering, sales and marketing principles.</span>
 							</Text>
 						</div>
-					</div>
-					<div className="text-center h-full">
 						<div className="flex justify-center">
 							<Text className="text-sm font-medium max-w-[600px] text-left">
 								This process defines relationship between business variables that establish a profitable use case,
@@ -49,34 +63,30 @@ const Hypothesis = () => {
 								<br />
 								<br />
 								<strong>This framework clarifies how to prioritise activities in a business:</strong>
-							</Text>
-						</div>
-						<div className="text-center h-full">
-							<div className="flex justify-center">
-								<Collapse.Group className="text-sm font-medium max-w-[600px] text-left">
-									<Collapse title="1: Market Identification and Validation (N, T, P)">
-										<Text>Solving for the niche, transformation, and price.</Text>
-									</Collapse>
-									<Collapse title="2: Mechanism Validation (M)">
-										<Text>
-											Ensuring the mechanism effectively delivers the transformation and the resulting contribution.{" "}
-										</Text>
-									</Collapse>
-									<Collapse title="3: Access Channel Validation (A)">
-										<Text>
-											Optimizing the traffic-conversion mechanism combination to result in a profitable unit case
-											(contribution after marketing value).{" "}
-										</Text>
-									</Collapse>
-									<Collapse title="4: Scaling">
-										<Text>Once the NTPMA solution is validated, we focus on expansion. </Text>
-									</Collapse>
-								</Collapse.Group>
-							</div>
-						</div>
-						<div className="flex justify-center">
-							<Text className="text-sm font-medium max-w-[600px] text-left">
-								Scaling, in simple terms, means increasing what works and eliminating what doesn’t. <br />
+								<br />
+								<ul className="list-decimal">
+									<li>
+										<strong>Market Identification and Validation (N, T, P)</strong>: Ensuring the mechanism effectively
+										delivers the transformation and the resulting contribution{" "}
+										<strong>to the market that needs it.</strong>
+									</li>
+									<li>
+										<strong>Mechanism Validation (M)</strong>: Ensuring the mechanism effectively delivers the
+										transformation and the resulting contribution.
+									</li>
+									<li>
+										<strong>Access Channel Validation (A)</strong>: Optimizing the traffic-conversion mechanism
+										combination to result in a profitable unit case (contribution after marketing value).
+									</li>
+									<li>
+										<strong>Scaling</strong>: Once the NTPMA solution is validated, we focus on expansion.{" "}
+									</li>
+								</ul>
+								<Card className="text-center">
+									<Text className="font-bold">
+										Scaling, in simple terms, means increasing what works and eliminating what doesn’t.
+									</Text>
+								</Card>
 								<br />
 								But how do we determine what works? <br />
 								<br />
