@@ -27,7 +27,7 @@ const TopNav = () => {
 								onPointerLeaveCapture={undefined}
 								icon={<LogIn />}
 								onClick={() => {
-									window.location.href = "https://app.growth-enginering.io";
+									window.location.href = "https://app.growth-engineering.io";
 								}}
 							>
 								Log In
