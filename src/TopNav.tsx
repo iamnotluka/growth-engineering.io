@@ -40,7 +40,7 @@ const TopNav = () => {
 							onPointerEnterCapture={undefined}
 							onPointerLeaveCapture={undefined}
 						>
-							Contact
+							<strong>Contact</strong>
 						</Button>
 					</Grid>
 				</Grid.Container>

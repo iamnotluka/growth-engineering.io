@@ -14,10 +14,7 @@ const Hypothesis = () => {
 						</div>
 						<div className="max-w-[600px] mx-auto">
 							<div className="pb-5 ml-[-9px]">
-								<User
-									src="https://media.licdn.com/dms/image/v2/D5603AQGfETua-OwJpw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1729278552572?e=1747267200&v=beta&t=gXFgfXK6pgW3HvKvhlqzy25zQQ9dKgdYEO4UGjIXvuc"
-									name="Luka"
-								>
+								<User src="./personal_pic.jpg" name="Luka">
 									3 min read · Mar 2025
 								</User>
 							</div>
