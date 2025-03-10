@@ -18,7 +18,7 @@ const HomePage = () => {
 							</div>
 							<Orb hoverIntensity={0.5} rotateOnHover={true} hue={0} forceHoverState={false} />
 						</div>
-						<div className="flex justify-center mb-8 max-w-[600px] mx-auto">
+						<div className="justify-center mb-8 max-w-[600px] mx-auto hidden sm:flex">
 							<Image width="90px" height="60px" src="/google_partner.svg" />
 							<Image width="90px" height="60px" src="/meta_partner.svg" />
 							<Image width="90px" height="60px" src="/shopify_partner.svg" />
