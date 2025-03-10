@@ -22,6 +22,8 @@ const Hypothesis = () => {
 								</User>
 							</div>
 						</div>
+						<hr className="h-px mb-5 bg-gray-200 border-0 dark:bg-gray-700" />
+
 						<div className="flex justify-center">
 							<Text h2 className="text-sm text-red-50 sm:font-bold sm:text-lg font-medium max-w-[600px] text-left">
 								<span className="font-bold">We help founders scale to $500k per month </span>with a systematic,
@@ -31,8 +33,8 @@ const Hypothesis = () => {
 						</div>
 						<div className="flex justify-center">
 							<Text className="text-sm font-medium max-w-[600px] text-left">
-								This process defines relationship between business variables that establish a profitable use case,
-								assuming the business operates as a machine that scales this use case effectively. <br />
+								This process defines relationship between business variables that establish a profitable unit case,
+								assuming the business operates as a machine that scales this unit case effectively. <br />
 								<br />
 								These variables include <strong>niche, transformation, price, mechanism and access channel.</strong>
 								<br></br>
@@ -82,14 +84,12 @@ const Hypothesis = () => {
 										<strong>Scaling</strong>: Once the NTPMA solution is validated, we focus on expansion.{" "}
 									</li>
 								</ul>
-								<Card className="text-center">
+								<Card className="text-left">
 									<Text className="font-bold">
-										<strong>
-											Scaling, in simple terms, means increasing what works and eliminating what doesn’t.
-											<br />
-											<br />
-											But how do we determine what works? <br />
-										</strong>
+										Scaling, in simple terms, means increasing what works and eliminating what doesn’t.
+										<br />
+										<br />
+										But how do we determine what works? <br />
 									</Text>
 								</Card>
 								<br />
@@ -97,16 +97,16 @@ const Hypothesis = () => {
 								outputs, and variables. <br />
 								<br />
 								Validating the NTPMA solution forces a business to adopt a systematic approach, requiring measurable
-								results at each step to define success. By identifying which inputs and processes yield the best
-								outputs—meaning which actions produce the most optimal outcomes—we can double down on those strategies.
+								results at each step to define success. <br />
+								<br />
+								By identifying which inputs and processes yield the best outputs—meaning which actions produce the most
+								optimal outcomes—we can double down on those strategies.
 								<br />
 								<br />
-								<Card className="text-center">
+								<Card className="text-left">
 									<Text className="font-bold">
-										<strong>
-											Using our software, we systemise your business and assist your team in execution, ensuring a
-											structured, scalable, and profitable approach based on data which guarantees growth.
-										</strong>
+										Using our software, we systemise your business and assist your team in execution, ensuring a
+										structured, scalable, and profitable approach based on data which guarantees growth.
 									</Text>
 								</Card>
 							</Text>
