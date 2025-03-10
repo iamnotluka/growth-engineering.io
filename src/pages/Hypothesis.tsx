@@ -84,11 +84,14 @@ const Hypothesis = () => {
 								</ul>
 								<Card className="text-center">
 									<Text className="font-bold">
-										Scaling, in simple terms, means increasing what works and eliminating what doesn’t.
+										<strong>
+											Scaling, in simple terms, means increasing what works and eliminating what doesn’t.
+											<br />
+											<br />
+											But how do we determine what works? <br />
+										</strong>
 									</Text>
 								</Card>
-								<br />
-								But how do we determine what works? <br />
 								<br />
 								The key lies in validating and systemizing the business. A system is composed of inputs, processes,
 								outputs, and variables. <br />
@@ -98,10 +101,14 @@ const Hypothesis = () => {
 								outputs—meaning which actions produce the most optimal outcomes—we can double down on those strategies.
 								<br />
 								<br />
-								<strong>
-									Using our software, we implement this model into your business and assist your team in execution,
-									ensuring a structured, scalable, and profitable approach to growth.
-								</strong>
+								<Card className="text-center">
+									<Text className="font-bold">
+										<strong>
+											Using our software, we systemise your business and assist your team in execution, ensuring a
+											structured, scalable, and profitable approach based on data which guarantees growth.
+										</strong>
+									</Text>
+								</Card>
 							</Text>
 						</div>
 					</div>
