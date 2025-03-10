@@ -45,13 +45,13 @@ const CaseStudies = () => {
 						</div>
 						<div className="flex justify-center pt-5">
 							<Card width="100%">
-								<Image src="./fitazfk_banner.webp" draggable={false} />
+								<Image src="./brothers_green.png" draggable={false} />
 								<Text h4 mb={0} mt={0}>
-									Transform by FITAZ: ~$100k per month profit added after 3 months.
+									The Brothers Green: $80k per month to $350k per month in 8 months.
 								</Text>
 								<Text type="secondary" small>
-									~1.2 mil ARR saved to the through efficiency in 3 months as a result of 20% less spend, 15% more
-									revenue.
+									Scaling a product market fit stage product to 100s of thousands per month allowing them to raise
+									multiple investments rounds.
 								</Text>
 								<Card.Footer>
 									<Text className="text-xs pr-3">Tools: </Text>
