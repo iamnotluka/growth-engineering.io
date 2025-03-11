@@ -7,7 +7,7 @@ const Hypothesis = () => {
 			<div className="px-4 pb-10">
 				<div className="text-center h-full">
 					<div className="text-left h-full">
-						<div className="flex justify-center pt-2">
+						<div className="flex justify-left max-w-[600px] mx-auto pt-2">
 							<Text h3 className=" font-bold max-w-[600px] text-left">
 								What We Do Simply Works - This Is Why
 							</Text>
