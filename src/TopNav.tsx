@@ -18,9 +18,9 @@ const TopNav = () => {
 			</div>
 			<div className="flex items-center">
 				<Grid.Container gap={1.5}>
-					<Grid>
-						<div className="block">
-							<Tooltip trigger="click" text="Coming soon.." placement="bottom">
+					<Tooltip trigger="hover" text="Coming soon.." placement="bottom">
+						<Grid>
+							<div className="block">
 								<Button
 									type="default"
 									auto
@@ -41,9 +41,10 @@ const TopNav = () => {
 								>
 									Log In
 								</Button>
-							</Tooltip>
-						</div>
-					</Grid>
+							</div>
+						</Grid>
+					</Tooltip>
+
 					<Grid>
 						<Button
 							type="secondary"

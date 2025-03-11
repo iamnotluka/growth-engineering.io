@@ -1,9 +1,12 @@
 import { Image, Page, Text } from "@geist-ui/core";
 import Orb from "../components/Orb";
+import SplashCursor from "../components/SplashCursor";
 
 const HomePage = () => {
 	return (
 		<div>
+			<SplashCursor />
+
 			<div className="px-2">
 				<div className="text-center h-full">
 					<div className="text-center h-full">

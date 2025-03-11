@@ -7,7 +7,6 @@ import SplashCursor from "./components/SplashCursor";
 function App() {
 	return (
 		<GeistProvider themeType="dark">
-			<SplashCursor />
 			<CssBaseline />
 			<Landing />
 		</GeistProvider>
