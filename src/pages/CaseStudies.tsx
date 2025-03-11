@@ -48,11 +48,11 @@ const CaseStudies = () => {
 							<Card width="100%">
 								<Image src="./brothers_green.png" draggable={false} />
 								<Text h4 mb={0} mt={0}>
-									The Brothers Green: $80K per month to $350K per month in 8 months.
+									The Brothers Green: $15K per month to $350K per month in 8 months.
 								</Text>
 								<Text type="secondary" small>
-									Scaling a product market fit stage product to 100s of thousands per month allowing them to raise
-									multiple investments rounds.
+									Scaling a hemp health supplement brand to 100s of thousands per month allowing them to raise multiple
+									investments rounds.
 								</Text>
 								<Card.Footer>
 									<Text className="text-xs pr-3">Tools: </Text>
