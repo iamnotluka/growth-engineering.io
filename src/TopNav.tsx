@@ -1,4 +1,4 @@
-import { Button, Grid } from "@geist-ui/core";
+import { Button, Grid, Text, Tooltip } from "@geist-ui/core";
 import { LogIn } from "@geist-ui/icons";
 import { useState } from "react";
 
@@ -20,26 +20,28 @@ const TopNav = () => {
 				<Grid.Container gap={1.5}>
 					<Grid>
 						<div className="block">
-							<Button
-								type="default"
-								ghost
-								auto
-								scale={0.7}
-								placeholder={undefined}
-								onPointerEnterCapture={undefined}
-								onPointerLeaveCapture={undefined}
-								icon={<LogIn />}
-								loading={loginLoading}
-								onClick={() => {
-									setLoginLoading(true);
-									window.location.href = "https://app.growth-engineering.io";
-									setTimeout(() => {
-										setLoginLoading(false);
-									}, 1000);
-								}}
-							>
-								Log In
-							</Button>
+							<Tooltip trigger="click" text="Coming soon.." placement="bottom">
+								<Button
+									type="default"
+									auto
+									scale={0.7}
+									disabled
+									placeholder={undefined}
+									onPointerEnterCapture={undefined}
+									onPointerLeaveCapture={undefined}
+									icon={<LogIn />}
+									loading={loginLoading}
+									onClick={() => {
+										setLoginLoading(true);
+										window.location.href = "https://app.growth-engineering.io";
+										setTimeout(() => {
+											setLoginLoading(false);
+										}, 1000);
+									}}
+								>
+									Log In
+								</Button>
+							</Tooltip>
 						</div>
 					</Grid>
 					<Grid>
