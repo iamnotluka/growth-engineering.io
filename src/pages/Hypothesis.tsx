@@ -104,6 +104,13 @@ const Hypothesis = () => {
 									structured, scalable, and profitable approach based on data which guarantees growth.
 								</Text>
 							</Card>
+							<br />
+							<Text className="text-[12px]">
+								<span className="text-[#999]">
+									Ref.: The Scientific Method To Solving For Product - Market Fit And Pocketing Your First Few Million
+									In 3 Years or Less - Nick Kozmin, salesprocess.io
+								</span>
+							</Text>
 						</Text>
 					</div>
 				</div>
