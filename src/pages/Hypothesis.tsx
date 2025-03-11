@@ -9,7 +9,7 @@ const Hypothesis = () => {
 					<div className="text-left h-full">
 						<div className="flex justify-center pt-2">
 							<Text h3 className=" font-bold max-w-[600px] text-left">
-								Read This To Understand Why What We Do Works
+								What We Do Simply Works - This Is Why
 							</Text>
 						</div>
 						<div className="max-w-[600px] mx-auto">
