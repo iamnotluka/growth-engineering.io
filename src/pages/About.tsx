@@ -101,6 +101,34 @@ const About = () => {
 							down on what moves the needle while eliminating inefficiencies that hold you back.
 						</Text>
 					</div>
+					<div className="flex justify-left pt-2">
+						<Text h4 className=" font-bold max-w-[600px] text-left">
+							Our Mission & Beliefs
+						</Text>
+					</div>
+					<div className="flex justify-left">
+						<Text className="text-sm font-medium max-w-[600px] text-left">
+							Our mission is to get you to the point where you are too big for us to manage.
+							<br />
+							<br />
+							<strong>Be Customer Obsessed:</strong> Start with the customer and work backwards - our customers are not
+							our partners - their customers are.
+							<br />
+							<br />
+							<strong>Take Accountability:</strong> Leaders are owners - lead, follow or get out of the way.
+							<br />
+							<br />
+							<strong>Insist on Highest Standards:</strong> Set expectations so high they seem unreasonable — because
+							that’s how real growth happens.
+							<br />
+							<br />
+							<strong>Deliver Results:</strong> At the end of the day, results are the only thing that matters.
+							<br />
+							<br />
+							<strong>Build Trust</strong>: "If you can't see yourself working with someone for life, don't work with
+							them for a day." - Naval Ravikant
+						</Text>
+					</div>
 				</div>
 			</div>
 		</div>
