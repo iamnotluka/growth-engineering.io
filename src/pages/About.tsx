@@ -20,22 +20,86 @@ const About = () => {
 						</div>
 						<div className="flex justify-left">
 							<Text className="text-sm font-medium max-w-[600px] text-left">
-								In other words... we scale you through paid advertising (highest leverage technology for online sales)
-								while making sure that rest of the stuff doesn't get in the way.
-								<br />
-								<br />
-								So what does that actually mean?
-								<br />
-								<br />
-								<strong className="text-lg">1. We help you determine what needs to be done.</strong>
-								<br />
-								<br />
-								<strong className="text-lg">2. We help you prioritise activities.</strong>
-								<br />
-								<br />
-								<strong className="text-lg">2. We either do these for you or help you in executing it.</strong>
+								Here you'll learn who we help, what we do, our missions & our story.
 							</Text>
 						</div>
+					</div>
+					<div className="flex justify-left pt-2">
+						<Text h4 className=" font-bold max-w-[600px] text-left">
+							Who We Help
+						</Text>
+					</div>
+					<div className="flex justify-left">
+						<Text className="text-sm font-medium max-w-[600px] text-left">
+							We help founders and product owners scale their businesses. We work exclusively with companies that have
+							achieved proven product-market fit—generating at least $100K per month in revenue. Our clients are
+							committed to delivering the best possible experience to their customers but lack the knowledge or capacity
+							to scale to $500K per month and beyond.
+						</Text>
+					</div>
+					<div className="flex justify-left pt-2">
+						<Text h4 className=" font-bold max-w-[600px] text-left">
+							What We Do
+						</Text>
+					</div>
+					<div className="flex justify-left">
+						<Text className="text-sm font-medium max-w-[600px] text-left">
+							Scaling a business is complex, but it doesn’t have to be. We help you create clear, repeatable systems
+							that drive consistent growth—without the overwhelm.
+							<br />
+							<br />
+							<strong>1. We help you systemize your business</strong>: So growth stops feeling chaotic and starts
+							becoming predictable.
+							<br />
+							<br />
+							<strong>2. We help you measure what matters</strong>: Giving you clarity on performance and eliminating
+							guesswork.
+							<br />
+							<br />
+							<strong>3. We help you focus on what moves the needle: </strong> So you're not wasting time on things that
+							don’t drive real results.
+							<br />
+							<br />
+							<strong>4. We help you execute—or handle it for you: </strong>Whether you need guidance or a team to
+							implement, we make sure things get done.
+							<br />
+							<br />
+							<strong> 5. We help you refine and improve</strong>: Using real data and feedback to continuously push
+							your growth beyond the next level.
+						</Text>
+					</div>
+					<div className="flex justify-left pt-2">
+						<Text h4 className=" font-bold max-w-[600px] text-left">
+							How We Integrate
+						</Text>
+					</div>
+					<div className="flex justify-left">
+						<Text className="text-sm font-medium max-w-[600px] text-left">
+							We are not an agency. We are not a coaching program. We are not employees.
+							<br />
+							<br />
+							What we are is a highly skilled team that leverages technology and data to drive real results. We take
+							ownership of revenue-generating activities—ensuring your delivery and access channels are optimized for
+							maximum performance.
+							<br />
+							<br />
+							As your business scales, eliminating waste is just as important as increasing performance. If you're
+							spending $100K–$200K per month on ads, then improving performance by 10% and reducing waste by 15% at the
+							same spend results in a ~30% increase in revenue and 140% increase in profit. Yes, 140% - optimisation is
+							as important as scale.
+							<br />
+							<br />
+							To make that happen, we need to own paid acquisition channels and creative execution. But we can't run
+							acquisition without a strategy. We can't build a strategy without a North Star. And we can't define a
+							North Star without understanding your product and funnel.
+							<br />
+							<br />
+							With so many moving parts, where do we focus?
+							<br />
+							<br />
+							We let data be the guide. Once your business is systemized, we can measure inputs and outputs—doubling
+							down on what moves the needle while eliminating inefficiencies that hold you back.
+						</Text>
 					</div>
 				</div>
 			</div>
