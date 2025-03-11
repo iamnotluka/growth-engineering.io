@@ -46,7 +46,7 @@ const TopNav = () => {
 							onPointerEnterCapture={undefined}
 							onPointerLeaveCapture={undefined}
 						>
-							<span className="font-medium">Contact</span>
+							<span className="font-medium">Apply Now</span>
 						</Button>
 					</Grid>
 				</Grid.Container>
