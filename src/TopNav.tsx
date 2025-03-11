@@ -41,7 +41,7 @@ const TopNav = () => {
 							scale={0.7}
 							placeholder={undefined}
 							onClick={() => {
-								window.location.href = "https://calendly.com/luka-zoric/30min";
+								window.location.href = "https://calendly.com/growth-engineering-io/30min";
 							}}
 							onPointerEnterCapture={undefined}
 							onPointerLeaveCapture={undefined}
