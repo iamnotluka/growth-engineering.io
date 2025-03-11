@@ -25,7 +25,7 @@ const CaseStudies = () => {
 							<Card width="100%">
 								<Image src="./fitazfk_banner.webp" draggable={false} />
 								<Text h4 mb={0} mt={0}>
-									Transform by FITAZ: ~$100k per month profit added after 3 months.
+									Transform by FITAZ: ~$100K per month profit added after ad spend.
 								</Text>
 								<Text type="secondary" small>
 									~1.2 mil ARR saved to the through efficiency in 3 months as a result of 20% less spend, 15% more
@@ -48,7 +48,7 @@ const CaseStudies = () => {
 							<Card width="100%">
 								<Image src="./brothers_green.png" draggable={false} />
 								<Text h4 mb={0} mt={0}>
-									The Brothers Green: $80k per month to $350k per month in 8 months.
+									The Brothers Green: $80K per month to $350K per month in 8 months.
 								</Text>
 								<Text type="secondary" small>
 									Scaling a product market fit stage product to 100s of thousands per month allowing them to raise

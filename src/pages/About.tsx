@@ -1,4 +1,4 @@
-import { Text } from "@geist-ui/core";
+import { Card, Text } from "@geist-ui/core";
 
 const About = () => {
 	return (
@@ -11,16 +11,23 @@ const About = () => {
 								About GE.io
 							</Text>
 						</div>
-						<div className="flex justify-left">
-							<Text h2 className="text-sm text-red-50 font-bold sm:text-lg max-w-[600px] text-left">
-								We are a consulting and advisory group specialising in growth strategy, marketing performance, and
-								product development - providing structured strategies, frameworks, and execution plans to help
-								businesses scale efficiently.
-							</Text>
-						</div>
+
 						<div className="flex justify-left">
 							<Text className="text-sm font-medium max-w-[600px] text-left">
 								Here you'll learn who we help, what we do, our missions & our story.
+							</Text>
+						</div>
+						<div className="flex justify-left">
+							{/* <Text h2 className="text-sm text-red-50 font-bold sm:text-lg max-w-[600px] text-left">
+								We are a consulting and advisory group specialising in growth strategy, marketing performance, and
+								product development - providing structured strategies, frameworks, and execution plans to help
+								businesses scale efficiently.
+							</Text> */}
+							<Text className="text-[12px] font-medium max-w-[600px] text-left">
+								<span className=" text-[#999]">
+									"If you can't see yourself working with someone for life, don't work with them for a day." - Naval
+									Ravikant{" "}
+								</span>
 							</Text>
 						</div>
 					</div>
@@ -32,7 +39,7 @@ const About = () => {
 					<div className="flex justify-left">
 						<Text className="text-sm font-medium max-w-[600px] text-left">
 							We help founders and product owners scale their businesses. We work exclusively with companies that have
-							achieved proven product-market fit—generating at least $100K per month in revenue. Our clients are
+							achieved proven product-market fit - generating at least $100K per month in revenue. Our partners are
 							committed to delivering the best possible experience to their customers but lack the knowledge or capacity
 							to scale to $500K per month and beyond.
 						</Text>
@@ -89,16 +96,23 @@ const About = () => {
 							as important as scale.
 							<br />
 							<br />
-							To make that happen, we need to own paid acquisition channels and creative execution. But we can't run
-							acquisition without a strategy. We can't build a strategy without a North Star. And we can't define a
-							North Star without understanding your product and funnel.
+							To make that happen, we need to own paid acquisition channels and creative execution. <br />
+							<br />
+							But we can't run acquisition without a strategy. <br />
+							<br />
+							We can't build a strategy without a North Star.
+							<br />
+							<br /> And we can't define a North Star without understanding your product and funnel.
 							<br />
 							<br />
 							With so many moving parts, where do we focus?
 							<br />
 							<br />
-							We let data be the guide. Once your business is systemized, we can measure inputs and outputs—doubling
-							down on what moves the needle while eliminating inefficiencies that hold you back.
+							We let data be the guide. Once your business is systemized, we can measure inputs and outputs compared to
+							our North Star.
+							<br />
+							<br />
+							Then we double down on what moves the needle while eliminating inefficiencies that hold you back.
 						</Text>
 					</div>
 					<div className="flex justify-left pt-2">
