@@ -1,4 +1,4 @@
-import { Card, Text } from "@geist-ui/core";
+import { Card, Divider, Text } from "@geist-ui/core";
 
 const About = () => {
 	return (
@@ -23,7 +23,7 @@ const About = () => {
 								product development - providing structured strategies, frameworks, and execution plans to help
 								businesses scale efficiently.
 							</Text> */}
-							<Text className="text-[12px] font-medium max-w-[600px] text-left">
+							<Text className="text-[12px] font-medium max-w-[600px] text-left pb-3">
 								<span className=" text-[#999]">
 									"If you can't see yourself working with someone for life, don't work with them for a day." - Naval
 									Ravikant{" "}
@@ -31,12 +31,10 @@ const About = () => {
 							</Text>
 						</div>
 					</div>
-					<div className="flex justify-left pt-2">
-						<Text h4 className=" font-bold max-w-[600px] text-left">
-							Who We Help
-						</Text>
-					</div>
-					<div className="flex justify-left">
+					<Divider className="mt-5" align="left">
+						Who We Help
+					</Divider>
+					<div className="flex justify-left pb-5">
 						<Text className="text-sm font-medium max-w-[600px] text-left">
 							We help founders and product owners scale their businesses. We work exclusively with companies that have
 							achieved proven product-market fit - generating at least $100K per month in revenue. Our partners are
@@ -44,12 +42,10 @@ const About = () => {
 							to scale to $500K per month and beyond.
 						</Text>
 					</div>
-					<div className="flex justify-left pt-2">
-						<Text h4 className=" font-bold max-w-[600px] text-left">
-							What We Do
-						</Text>
-					</div>
-					<div className="flex justify-left">
+					<Divider className="mt-5" align="left">
+						What We Do
+					</Divider>
+					<div className="flex justify-left pb-5">
 						<Text className="text-sm font-medium max-w-[600px] text-left">
 							Scaling a business is complex, but it doesn’t have to be. We help you create clear, repeatable systems
 							that drive consistent growth—without the overwhelm.
@@ -75,12 +71,10 @@ const About = () => {
 							your growth beyond the next level.
 						</Text>
 					</div>
-					<div className="flex justify-left pt-2">
-						<Text h4 className=" font-bold max-w-[600px] text-left">
-							How We Integrate
-						</Text>
-					</div>
-					<div className="flex justify-left">
+					<Divider className="mt-5" align="left">
+						How We Integrate
+					</Divider>
+					<div className="flex justify-left pb-5">
 						<Text className="text-sm font-medium max-w-[600px] text-left">
 							We are not an agency. We are not a coaching program. We are not employees.
 							<br />
@@ -115,11 +109,9 @@ const About = () => {
 							Then we double down on what moves the needle while eliminating inefficiencies that hold you back.
 						</Text>
 					</div>
-					<div className="flex justify-left pt-2">
-						<Text h4 className=" font-bold max-w-[600px] text-left">
-							Our Mission & Beliefs
-						</Text>
-					</div>
+					<Divider className="mt-5" align="left">
+						Our Mission & Beliefs
+					</Divider>
 					<div className="flex justify-left">
 						<Text className="text-sm font-medium max-w-[600px] text-left">
 							Our mission is to get you to the point where you are too big for us to manage.
