@@ -279,5 +279,5 @@ export default function Orb({
 		};
 	}, [hue, hoverIntensity, rotateOnHover, forceHoverState]);
 
-	return <div ref={ctnDom} className="orb-container" />;
+	return <div ref={ctnDom} className="orb-container block md:hidden" />;
 }
