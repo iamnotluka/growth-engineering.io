@@ -7,7 +7,12 @@ const About = () => {
 				<div className="text-left h-full">
 					<div className="flex justify-left max-w-[600px] mx-auto pt-2">
 						<Text h3 className=" font-bold max-w-[600px] text-left">
-							About
+							The Anti-Agency
+						</Text>
+					</div>
+					<div className="flex justify-left pb-4">
+						<Text small className="max-w-[600px] text-left">
+							Working on this now...
 						</Text>
 					</div>
 				</div>
