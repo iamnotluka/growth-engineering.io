@@ -1,7 +1,10 @@
 import { Button, Grid } from "@geist-ui/core";
 import { LogIn } from "@geist-ui/icons";
+import { useState } from "react";
 
 const TopNav = () => {
+	const [loginLoading, setLoginLoading] = useState(false);
+	const [contactLoading, setContactLoading] = useState(false);
 	return (
 		<nav className="flex justify-between items-center bg-black px-[16px] h-[64px] border-b border-b-[#333]">
 			<div className="flex items-center">
@@ -26,8 +29,12 @@ const TopNav = () => {
 								onPointerEnterCapture={undefined}
 								onPointerLeaveCapture={undefined}
 								icon={<LogIn />}
+								loading={loginLoading}
 								onClick={() => {
-									window.location.href = "https://app.growth-engineering.io";
+									setLoginLoading(true);
+									setTimeout(() => {
+										window.location.href = "https://app.growth-engineering.io";
+									}, 100);
 								}}
 							>
 								Log In
@@ -40,8 +47,12 @@ const TopNav = () => {
 							auto
 							scale={0.7}
 							placeholder={undefined}
+							loading={contactLoading}
 							onClick={() => {
-								window.location.href = "https://calendly.com/growth-engineering-io/30min";
+								setContactLoading(true);
+								setTimeout(() => {
+									window.location.href = "https://calendly.com/growth-engineering-io/30min";
+								}, 100);
 							}}
 							onPointerEnterCapture={undefined}
 							onPointerLeaveCapture={undefined}

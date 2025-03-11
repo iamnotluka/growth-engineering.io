@@ -1,5 +1,4 @@
-import { Card, Collapse, Text, User } from "@geist-ui/core";
-import { QuestionCircle } from "@geist-ui/icons";
+import { Card, Text, User } from "@geist-ui/core";
 
 const Hypothesis = () => {
 	return (
