@@ -14,7 +14,7 @@ const About = () => {
 
 						<div className="flex justify-left">
 							<Text className="text-sm font-medium max-w-[600px] text-left">
-								Here you'll learn who we help, what we do, our missions & our story.
+								Here you'll learn who we help, what we do & our missions and beliefs.
 							</Text>
 						</div>
 						<div className="flex justify-left">
