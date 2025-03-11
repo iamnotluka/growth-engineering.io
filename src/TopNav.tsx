@@ -32,9 +32,10 @@ const TopNav = () => {
 								loading={loginLoading}
 								onClick={() => {
 									setLoginLoading(true);
+									window.location.href = "https://app.growth-engineering.io";
 									setTimeout(() => {
-										window.location.href = "https://app.growth-engineering.io";
-									}, 100);
+										setLoginLoading(false);
+									}, 1000);
 								}}
 							>
 								Log In
@@ -50,9 +51,10 @@ const TopNav = () => {
 							loading={contactLoading}
 							onClick={() => {
 								setContactLoading(true);
+								window.location.href = "https://calendly.com/growth-engineering-io/30min";
 								setTimeout(() => {
-									window.location.href = "https://calendly.com/growth-engineering-io/30min";
-								}, 100);
+									setContactLoading(false);
+								}, 1000);
 							}}
 							onPointerEnterCapture={undefined}
 							onPointerLeaveCapture={undefined}

@@ -30,7 +30,10 @@ const About = () => {
 								<strong className="text-lg">1. We help you determine what needs to be done.</strong>
 								<br />
 								<br />
-								<strong className="text-lg">2. We do it for you or help you execute.</strong>
+								<strong className="text-lg">2. We help you prioritise activities.</strong>
+								<br />
+								<br />
+								<strong className="text-lg">2. We either do these for you or help you in executing it.</strong>
 							</Text>
 						</div>
 					</div>
