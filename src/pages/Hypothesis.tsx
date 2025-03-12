@@ -12,7 +12,7 @@ const Hypothesis = () => {
 					</div>
 					<div className="max-w-[600px] mx-auto">
 						<div className="pb-5 ml-[-9px]">
-							<User src="./personal_pic.jpg" name="Luka">
+							<User src="./personal_pic.jpeg" name="Luka">
 								3 min read · Mar 2025
 							</User>
 						</div>
