@@ -25,7 +25,7 @@ const HomePage = () => {
 							<Image width="90px" height="60px" src="/google_partner.svg" />
 							<Image width="90px" height="60px" src="/meta_partner.svg" />
 							<Image width="90px" height="60px" src="/shopify_partner.svg" />
-							{/* <Image width="70px" height="60px" src="/klayvio_partner.svg" /> */}
+							<Image width="70px" height="60px" src="/klayvio_partner.svg" />
 						</div>
 						<div className="flex justify-center">
 							<Text h1 className="text-sm text-red-50 sm:font-bold sm:text-lg font-medium max-w-[600px] text-center">
