@@ -42,7 +42,7 @@ const TopNav = () => {
 			</div>
 			<div className="flex items-center">
 				<Grid.Container gap={1.5}>
-					<Grid>
+					{/* <Grid>
 						<div className="block">
 							<Button
 								type="default"
@@ -62,7 +62,7 @@ const TopNav = () => {
 								Log In
 							</Button>
 						</div>
-					</Grid>
+					</Grid> */}
 
 					<Grid>
 						<Button
