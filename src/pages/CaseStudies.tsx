@@ -48,7 +48,7 @@ const CaseStudies = () => {
 							<Card width="100%">
 								<Image src="./fitazfk_banner.webp" draggable={false} />
 								<Text h4 mb={0} mt={0}>
-									Transform by FITAZ: ~$100K per month profit added after ad spend.
+									Transform by FITAZ: Generating ~$100K Monthly Profit Post-Ad Spend
 								</Text>
 								<Text type="secondary" small>
 									~1.2 mil ARR saved to the through efficiency in 3 months as a result of 20% less spend, 15% more
@@ -71,7 +71,7 @@ const CaseStudies = () => {
 							<Card width="100%">
 								<Image src="./brothers_green.png" draggable={false} />
 								<Text h4 mb={0} mt={0}>
-									The Brothers Green: $15K per month to $350K per month in 8 months.
+									The Brothers Green: Scaled from $15K to $350K/Month in Just 8 Months
 								</Text>
 								<Text type="secondary" small>
 									Scaling a hemp health supplement brand to 100s of thousands per month allowing them to raise multiple
