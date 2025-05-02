@@ -49,7 +49,7 @@ const About = () => {
 						<div className="flex justify-left pb-5">
 							<Text className="text-sm font-medium max-w-[600px] text-left">
 								Scaling a business is complex, but it doesn’t have to be. We help you create clear, repeatable systems
-								that drive consistent growth—without the overwhelm.
+								that drive consistent growth - without the overwhelm.
 								<br />
 								<br />
 								<strong>1. We help you systemize your business</strong>: So growth stops feeling chaotic and starts
@@ -81,8 +81,8 @@ const About = () => {
 								<br />
 								<br />
 								What we are is a highly skilled team that leverages technology and data to drive real results. We take
-								ownership of revenue-generating activities—ensuring your delivery and access channels are optimized for
-								maximum performance.
+								ownership of revenue-generating activities — ensuring your delivery and access channels are optimized
+								for maximum performance.
 								<br />
 								<br />
 								As your business scales, eliminating waste is just as important as increasing performance. If you're
@@ -125,7 +125,7 @@ const About = () => {
 								<strong>Take Accountability:</strong> Leaders are owners - lead, follow or get out of the way.
 								<br />
 								<br />
-								<strong>Insist on Highest Standards:</strong> Set expectations so high they seem unreasonable — because
+								<strong>Insist on Highest Standards:</strong> Set expectations so high they seem unreasonable - because
 								that’s how real growth happens.
 								<br />
 								<br />
