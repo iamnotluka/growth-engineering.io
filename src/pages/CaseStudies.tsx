@@ -25,7 +25,7 @@ const CaseStudies = () => {
 							<Card width="100%">
 								<Image src="./gwop.png" draggable={false} />
 								<Text h4 mb={0} mt={0}>
-									GWOP: 25%+ increase in revenue in 30 days
+									GWOP: 25%+ Revenue Lift in 7 Days After Growth Strategy and Onboarding Automation
 								</Text>
 								<Text type="secondary" small>
 									Automated the onboarding process to improve customer quality and revenue, and provided strategic
