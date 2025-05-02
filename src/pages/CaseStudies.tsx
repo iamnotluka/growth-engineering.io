@@ -23,6 +23,29 @@ const CaseStudies = () => {
 
 						<div className="flex justify-center pt-2">
 							<Card width="100%">
+								<Image src="./gwop.png" draggable={false} />
+								<Text h4 mb={0} mt={0}>
+									GWOP: 25%+ increase in revenue in 30 days
+								</Text>
+								<Text type="secondary" small>
+									Automated the onboarding process to improve customer quality and revenue, and provided strategic
+									consulting on the full growth ecosystem - currently awaiting results post-implementation.
+								</Text>
+								<Card.Footer>
+									<Text className="text-xs pr-3">Tools: </Text>
+									<Avatar.Group>
+										<Avatar src={"./hubspot_logo.svg"} stacked />
+										<Avatar src={"./aws_logo.png"} stacked />
+										<Avatar src={"./sumsub_logo.png"} stacked />
+									</Avatar.Group>
+									<Text className="text-xs px-3">
+										Optimised/solved for: <strong>Mechanism, Access Channel</strong>
+									</Text>
+								</Card.Footer>
+							</Card>
+						</div>
+						<div className="flex justify-center pt-5">
+							<Card width="100%">
 								<Image src="./fitazfk_banner.webp" draggable={false} />
 								<Text h4 mb={0} mt={0}>
 									Transform by FITAZ: ~$100K per month profit added after ad spend.
