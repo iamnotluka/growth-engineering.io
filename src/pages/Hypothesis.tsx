@@ -21,8 +21,10 @@ const Hypothesis = () => {
 
 					<div className="flex justify-center">
 						<Text h2 className="text-sm text-red-50 sm:font-bold sm:text-lg font-medium max-w-[600px] text-left">
-							<span className="font-bold">We help founders scale to $500k per month </span>with a systematic,
-							data-driven approach to growth - guided by{" "}
+							<span className="font-bold">
+								I help founders prioritise, execute and scale their revenue and operations{" "}
+							</span>
+							with a systematic, data-driven approach to growth - guided by{" "}
 							<span className="font-bold">engineering, sales and marketing principles.</span>
 						</Text>
 					</div>
