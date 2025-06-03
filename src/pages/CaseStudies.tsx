@@ -25,11 +25,12 @@ const CaseStudies = () => {
 							<Card width="100%">
 								<Image src="./gwop.png" draggable={false} />
 								<Text h4 mb={0} mt={0}>
-									GWOP: Automated Traffic Generation and Onboarding Ops
+									GWOP: 20% Increase in GTV MoM
 								</Text>
 								<Text type="secondary" small>
-									Automated the onboarding process to improve customer quality and revenue, and provided strategic
-									consulting on the full growth ecosystem - currently awaiting results post-implementation.
+									Automated the onboarding process to improve customer quality and revenue, automated traffic generation
+									and provided strategic consulting on the full growth ecosystem, resulting in 20% increase in revenue
+									month over month.
 								</Text>
 								<Card.Footer>
 									<Text className="text-xs pr-3">Tools: </Text>
