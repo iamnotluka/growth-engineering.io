@@ -2,14 +2,12 @@ export function Problem() {
   return (
     <section className="headline-section">
       <div className="container-narrow">
-        <p className="eyebrow reveal">The problem.</p>
-        <h2 className="headline reveal">
-          You know there is more growth.
-          <span className="sub">You just can&apos;t see where.</span>
+        <h2 className="headline center reveal">
+          You know there is more growth.{" "}
+          <span className="serif">You just can&apos;t see where.</span>
         </h2>
-        <p className="headline-body reveal">
-          Revenue is moving. The team is working. But profit, cash, CAC and retention tell different stories — and none of them line up. Decisions get harder. The cost of guessing goes up.
-        </p>
+        <p className="headline-body center reveal">
+When profit, cash, CAC, and retention are not aligned with your goals, change becomes necessary. Decision pressure increases, and the cost of getting it wrong is high. Clarity is what shows you what needs to be prioritised.        </p>
       </div>
     </section>
   );

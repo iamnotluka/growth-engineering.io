@@ -1,83 +1,73 @@
 export function Hero() {
   return (
     <section className="hero" id="top">
-      <div className="container">
-        <p className="hero-kicker reveal visible">Advisory for eCommerce founders.</p>
+      <div className="hero-bg" aria-hidden></div>
+      <div className="container hero-inner">
         <h1 className="hero-title reveal visible">
-          More growth lives in your numbers.
-          <span className="sub">We&apos;ll show you where.</span>
+          More growth lives in your numbers. <span className="serif">We&apos;ll show you where.</span>
         </h1>
         <p className="hero-sub reveal visible">
-          Most founders don&apos;t have a growth problem. They have a <strong>clarity</strong> problem. We read the numbers behind your business, find what is limiting profitable scale, and give you a plan you can actually run.
+          Most founders don&apos;t have a growth problem. They have a <strong>clarity</strong> problem. We read the numbers behind your business, find what is limiting profitable scale, and give you a plan you can run.
         </p>
         <div className="hero-actions reveal visible">
-          <a href="#contact" className="btn">Book a strategy call <span className="btn-arrow">→</span></a>
-          <a href="#method" className="btn-link">See the method</a>
+          <a href="#contact" className="btn">
+            Book a strategy call
+          </a>
         </div>
+      </div>
 
-        {/* Hero mockup: "the work" as hero image */}
-        <div className="hero-mockup reveal">
-          <div className="mockup-topbar">
-            <div className="mockup-dot"></div>
-            <div className="mockup-dot"></div>
-            <div className="mockup-dot"></div>
-          </div>
-          <div className="mockup-inner">
-            <div className="mockup-header">
-              <div className="mockup-title">Contribution Margin — Last 90 Days</div>
-              <div className="mockup-date">Assess Phase · v1.2</div>
-            </div>
-            <div className="mockup-stats">
-              <div>
-                <div className="mockup-stat-label">Revenue</div>
-                <div className="mockup-stat-value">$847K</div>
-                <div className="mockup-stat-delta">↑ 14.2%</div>
-              </div>
-              <div>
-                <div className="mockup-stat-label">Contribution Margin</div>
-                <div className="mockup-stat-value">32.4%</div>
-                <div className="mockup-stat-delta down">↓ 2.1pts</div>
-              </div>
-              <div>
-                <div className="mockup-stat-label">Blended CAC</div>
-                <div className="mockup-stat-value">$48.20</div>
-                <div className="mockup-stat-delta down">↑ 18%</div>
-              </div>
-              <div>
-                <div className="mockup-stat-label">90-day LTV</div>
-                <div className="mockup-stat-value">$124</div>
-                <div className="mockup-stat-delta">↑ 4.8%</div>
-              </div>
-            </div>
-            <div className="mockup-chart">
-              <svg viewBox="0 0 800 140" preserveAspectRatio="none">
-                <defs>
-                  <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#1d1d1f" stopOpacity="0.15" />
-                    <stop offset="100%" stopColor="#1d1d1f" stopOpacity="0" />
-                  </linearGradient>
-                </defs>
-                {/* Grid lines */}
-                <line x1="0" y1="35" x2="800" y2="35" stroke="rgba(0,0,0,0.06)" strokeWidth="1" />
-                <line x1="0" y1="70" x2="800" y2="70" stroke="rgba(0,0,0,0.06)" strokeWidth="1" />
-                <line x1="0" y1="105" x2="800" y2="105" stroke="rgba(0,0,0,0.06)" strokeWidth="1" />
-                {/* Filled area */}
-                <path d="M0,100 C50,95 100,88 150,82 C200,76 250,65 300,58 C350,52 400,48 450,42 C500,36 550,45 600,40 C650,34 700,28 750,24 L800,22 L800,140 L0,140 Z" fill="url(#chartGradient)" />
-                {/* Line */}
-                <path d="M0,100 C50,95 100,88 150,82 C200,76 250,65 300,58 C350,52 400,48 450,42 C500,36 550,45 600,40 C650,34 700,28 750,24 L800,22" fill="none" stroke="#1d1d1f" strokeWidth="2" strokeLinecap="round" />
-                {/* Dots */}
-                <circle cx="150" cy="82" r="3" fill="#1d1d1f" />
-                <circle cx="300" cy="58" r="3" fill="#1d1d1f" />
-                <circle cx="450" cy="42" r="3" fill="#1d1d1f" />
-                <circle cx="600" cy="40" r="3" fill="#1d1d1f" />
-                <circle cx="750" cy="24" r="4" fill="#000000" />
-              </svg>
-            </div>
-            <div className="mockup-footer">
-              <div>8 metrics tracked · Updated daily</div>
-              <div className="mockup-footer-tag">Bottleneck: CAC ceiling</div>
-            </div>
-          </div>
+      <div className="hero-chart reveal visible">
+        <svg viewBox="0 0 1100 280" preserveAspectRatio="none" aria-hidden>
+          <defs>
+            <linearGradient id="heroChartFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#6fa88a" stopOpacity="0.18" />
+              <stop offset="100%" stopColor="#6fa88a" stopOpacity="0" />
+            </linearGradient>
+            <linearGradient id="heroChartStroke" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor="#9ec1aa" />
+              <stop offset="50%" stopColor="#5a9b76" />
+              <stop offset="100%" stopColor="#9ec1aa" />
+            </linearGradient>
+          </defs>
+
+          {/* Filled area */}
+          <path
+            d="M0,170 C 80,140 140,90 220,110 C 300,130 350,200 430,200 C 510,200 540,120 620,150 C 700,180 740,240 820,210 C 900,180 940,110 1020,130 L 1100,150 L 1100,280 L 0,280 Z"
+            fill="url(#heroChartFill)"
+          />
+          {/* Line */}
+          <path
+            d="M0,170 C 80,140 140,90 220,110 C 300,130 350,200 430,200 C 510,200 540,120 620,150 C 700,180 740,240 820,210 C 900,180 940,110 1020,130 L 1100,150"
+            fill="none"
+            stroke="url(#heroChartStroke)"
+            strokeWidth="2.4"
+            strokeLinecap="round"
+          />
+          {/* Vertical guide for center card */}
+          <line
+            x1="540"
+            y1="50"
+            x2="540"
+            y2="240"
+            stroke="rgba(13,33,24,0.18)"
+            strokeWidth="1"
+            strokeDasharray="3 4"
+          />
+          {/* Anchor dot */}
+          <circle cx="540" cy="124" r="4" fill="#163528" />
+        </svg>
+
+        <div className="hero-chart-card left">
+          <div className="hero-chart-card-label">Revenue</div>
+          <div className="hero-chart-card-value up">+$847,210</div>
+        </div>
+        <div className="hero-chart-card center">
+          <div className="hero-chart-card-label">Contribution margin</div>
+          <div className="hero-chart-card-value">22.8%</div>
+        </div>
+        <div className="hero-chart-card right">
+          <div className="hero-chart-card-label">Blended CAC</div>
+          <div className="hero-chart-card-value up">−$48.20</div>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import { Nav } from "./_components/nav";
 import { Hero } from "./_components/hero";
+import { Trust } from "./_components/trust";
 import { Problem } from "./_components/problem";
 import { Approach } from "./_components/approach";
 import { Manifesto } from "./_components/manifesto";
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <Nav />
       <Hero />
+      <Trust />
       <Problem />
       <Approach />
       <Manifesto />

@@ -3,8 +3,12 @@ export function Manifesto() {
     <section className="manifesto">
       <div className="container-narrow">
         <div className="manifesto-text reveal">
-          <span className="dim">Most advisors sell you a product — a framework, a course, a system packaged to work for everyone.</span> You are past that. Your problem is specific to <span className="accent">your</span> business. You need someone who goes back to first principles and models it on the evidence.
-        </div>
+          <span className="dim">
+            Most advisors sell you a product. <br/><br/>A framework, a course, a system packaged to work for everyone.
+          </span>{" "}<br/><br/>
+          You are past that. <br/><br/>Your problem is specific to{" "}
+          <strong>your business.</strong><br/><br/> <strong>We go back to first principles and model it on the evidence so that you know exactly what to do next.
+        </strong></div>
       </div>
     </section>
   );
