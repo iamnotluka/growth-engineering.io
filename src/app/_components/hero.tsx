@@ -6,12 +6,11 @@ export function Hero() {
         <h1 className="hero-title reveal visible">
           More growth lives in your numbers. <span className="serif">We&apos;ll show you where.</span>
         </h1>
-        <p className="hero-sub reveal visible">
-          Most founders don&apos;t have a growth problem. They have a <strong>clarity</strong> problem. We read the numbers behind your business, find what is limiting profitable scale, and give you a plan you can run.
+        <p className="hero-sub reveal visible">We read the numbers behind your business, tell you what is limiting profitable scale, and give you a plan you can run by yourself or your team.
         </p>
         <div className="hero-actions reveal visible">
           <a href="#contact" className="btn">
-            Book a strategy call
+            Apply now
           </a>
         </div>
       </div>

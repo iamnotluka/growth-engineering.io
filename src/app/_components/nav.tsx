@@ -5,8 +5,7 @@ export function Nav() {
         <a href="#top" className="wordmark">
           <span className="wordmark-mark"></span>
           <span className="wordmark-name">
-            <span>Growth Engineering</span>
-            <span>Advisory</span>
+            <span>growth-engineering.io</span>
           </span>
         </a>
         <ul className="nav-links">
@@ -16,7 +15,7 @@ export function Nav() {
           <li><a href="#team">Team</a></li>
         </ul>
         <div className="nav-cta-wrap">
-          <a href="#contact" className="nav-cta">Strategy call</a>
+          <a href="#contact" className="nav-cta">Apply now</a>
         </div>
       </div>
     </nav>

@@ -13,7 +13,7 @@ type Tier = {
 function PlaybookVisual() {
   return (
     <svg viewBox="0 0 320 220" preserveAspectRatio="xMidYMid slice">
-      <rect width="320" height="220" fill="#163528" />
+      <rect width="320" height="220" fill="#14141a" />
       <line x1="0" y1="25" x2="320" y2="25" stroke="rgba(255,255,255,0.06)" />
       <line x1="0" y1="105" x2="320" y2="105" stroke="rgba(255,255,255,0.06)" />
       <line x1="0" y1="185" x2="320" y2="185" stroke="rgba(255,255,255,0.06)" />
@@ -44,7 +44,7 @@ function PlaybookVisual() {
 function DecisionsVisual() {
   return (
     <svg viewBox="0 0 320 220" preserveAspectRatio="xMidYMid slice">
-      <rect width="320" height="220" fill="#163528" />
+      <rect width="320" height="220" fill="#14141a" />
 
       <circle cx="135" cy="80" r="48" fill="rgba(182,210,187,0.05)" stroke="rgba(158,193,170,0.55)" strokeWidth="1.5" />
       <circle cx="200" cy="80" r="48" fill="rgba(182,210,187,0.05)" stroke="rgba(158,193,170,0.55)" strokeWidth="1.5" />
@@ -65,7 +65,7 @@ function DecisionsVisual() {
 function QuantifiedVisual() {
   return (
     <svg viewBox="0 0 320 220" preserveAspectRatio="xMidYMid slice">
-      <rect width="320" height="220" fill="#163528" />
+      <rect width="320" height="220" fill="#14141a" />
 
       <rect x="20" y="20" width="88" height="84" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" />
       <path d="M32,84 L52,62 L72,72 L96,46" fill="none" stroke="#9ec1aa" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
