@@ -1,22 +1,28 @@
+const links = [
+  { id: "approach", label: "Approach" },
+  { id: "method", label: "Method" },
+  { id: "principles", label: "Principles" },
+  { id: "team", label: "Team" },
+];
+
 export function Nav() {
   return (
-    <nav>
+    <nav className="site-nav">
       <div className="container nav-inner">
         <a href="#top" className="wordmark">
-          <span className="wordmark-mark"></span>
-          <span className="wordmark-name">
-            <span>growth-engineering.io</span>
-          </span>
+          <span className="wordmark-mark" />
+          Growth Engineering
         </a>
         <ul className="nav-links">
-          <li><a href="#approach">Approach</a></li>
-          <li><a href="#method">Method</a></li>
-          <li><a href="#principles">Principles</a></li>
-          <li><a href="#team">Team</a></li>
+          {links.map((l) => (
+            <li key={l.id}>
+              <a href={`#${l.id}`}>{l.label}</a>
+            </li>
+          ))}
         </ul>
-        <div className="nav-cta-wrap">
-          <a href="#contact" className="nav-cta">Apply now</a>
-        </div>
+        <a href="#contact" className="nav-cta">
+          Strategy call
+        </a>
       </div>
     </nav>
   );
