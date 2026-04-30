@@ -131,10 +131,6 @@ export function Hero() {
       <div className="container">
         <div className="hero-grid">
           <div>
-            <div className="hero-kicker">
-              <span className="pip" />
-              Advisory for eCommerce founders
-            </div>
             <h1 className="hero-title">
               More growth lives in your numbers.
               <span className="l2">We&rsquo;ll show you where.</span>
@@ -147,28 +143,20 @@ export function Hero() {
             </p>
             <div className="hero-actions">
               <a href="#contact" className="btn btn-acid">
-                Book a strategy call <span className="arrow">→</span>
-              </a>
-              <a href="#method" className="btn-ghost">
-                See the method &nbsp;›
+                Book a strategy call
               </a>
             </div>
           </div>
           <div className="hero-mock-stack" aria-hidden="true">
             <DashboardCard />
             <div className="hero-card hero-card-2">
-              <div className="small-eye">Bottleneck found</div>
+              <div className="small-eye">Blended CAC</div>
               <div className="small-h">
-                CAC ceiling at <em>$48</em>
+                $48 <span className="to">→</span> <em>$34</em>
               </div>
-              <div className="small-foot">Diagnose · v1.2</div>
-            </div>
-            <div className="hero-card hero-card-3">
-              <div className="stamp">
-                Run the
-                <br />
-                plan.<small>Direct phase</small>
-              </div>
+              <div className="small-divider" />
+              <div className="small-action-lbl">Action</div>
+              <div className="small-action">Cap top-of-funnel at $32</div>
             </div>
           </div>
         </div>

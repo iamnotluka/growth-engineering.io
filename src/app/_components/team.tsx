@@ -25,7 +25,6 @@ export function Team() {
       <div className="container">
         <div className="team-head">
           <div>
-            <p className="eyebrow">The team.</p>
             <h2 className="h-section">
               Who you are
               <br />

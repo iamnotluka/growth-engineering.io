@@ -26,7 +26,6 @@ export function Principles() {
     <section className="principles" id="principles">
       <div className="container">
         <div className="principles-head">
-          <p className="eyebrow">Principles.</p>
           <h2 className="h-section">
             What we believe
             <br />

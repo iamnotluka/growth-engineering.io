@@ -70,7 +70,6 @@ export function Problem() {
   return (
     <section className="problem" id="problem">
       <div className="container">
-        <p className="eyebrow">The problem.</p>
         <div className="problem-grid">
           <div>
             <h2 className="h-section">

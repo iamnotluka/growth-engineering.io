@@ -9,7 +9,6 @@ export function Contact() {
     <>
       <section className="contact" id="contact">
         <div className="container">
-          <p className="eyebrow on-dark">Begin.</p>
           <div className="contact-grid">
             <div>
               <h2 className="contact-title">
@@ -27,7 +26,7 @@ export function Contact() {
                 className="contact-cta-large"
                 onClick={() => setBooked(true)}
               >
-                Book a strategy call <span className="arrow">→</span>
+                Book a strategy call
               </button>
             </div>
             <div className="contact-meta">

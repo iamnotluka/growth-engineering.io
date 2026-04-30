@@ -96,7 +96,6 @@ export function Method() {
       <div className="container">
         <div className="method-head">
           <div>
-            <p className="eyebrow">The method.</p>
             <h2 className="h-section">
               Three phases.
               <br />
@@ -108,24 +107,6 @@ export function Method() {
             a plan you can actually run. The three phases stand on their own
             and build on one another.
           </p>
-        </div>
-
-        <div className="process-rail" aria-hidden="true">
-          <div className="rail-node">
-            <div className="nhub">01</div>
-            <div className="nlbl">Assess</div>
-            <div className="ntag">Pull · Model · See</div>
-          </div>
-          <div className="rail-node">
-            <div className="nhub">02</div>
-            <div className="nlbl">Diagnose</div>
-            <div className="ntag">Cause not symptom</div>
-          </div>
-          <div className="rail-node">
-            <div className="nhub">03</div>
-            <div className="nlbl">Direct</div>
-            <div className="ntag">Plan · Run · Stay</div>
-          </div>
         </div>
 
         <div className="phases-grid">
