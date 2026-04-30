@@ -3,6 +3,7 @@ export function Team() {
     <section className="team" id="team">
       <div className="container">
         <div className="team-header">
+          <div className="eyebrow reveal">The team</div>
           <h2 className="headline center reveal">
             Two people.{" "}
             <span className="serif">An engineer and an operator.</span>

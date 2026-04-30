@@ -13,7 +13,7 @@ type Tier = {
 function PlaybookVisual() {
   return (
     <svg viewBox="0 0 320 220" preserveAspectRatio="xMidYMid slice">
-      <rect width="320" height="220" fill="#14141a" />
+      <rect width="320" height="220" fill="#131820" />
       <line x1="0" y1="25" x2="320" y2="25" stroke="rgba(255,255,255,0.06)" />
       <line x1="0" y1="105" x2="320" y2="105" stroke="rgba(255,255,255,0.06)" />
       <line x1="0" y1="185" x2="320" y2="185" stroke="rgba(255,255,255,0.06)" />
@@ -21,22 +21,22 @@ function PlaybookVisual() {
       <path
         d="M40,185 L100,185 L100,105 L190,105 L190,25 L280,25"
         fill="none"
-        stroke="#9ec1aa"
+        stroke="#80e8ff"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <line x1="40" y1="185" x2="40" y2="200" stroke="rgba(182,210,187,0.35)" strokeWidth="1" strokeDasharray="2 3" />
-      <line x1="190" y1="105" x2="190" y2="200" stroke="rgba(182,210,187,0.35)" strokeWidth="1" strokeDasharray="2 3" />
-      <line x1="280" y1="25" x2="280" y2="200" stroke="rgba(182,210,187,0.35)" strokeWidth="1" strokeDasharray="2 3" />
+      <line x1="40" y1="185" x2="40" y2="200" stroke="rgba(128,232,255,0.35)" strokeWidth="1" strokeDasharray="2 3" />
+      <line x1="190" y1="105" x2="190" y2="200" stroke="rgba(128,232,255,0.35)" strokeWidth="1" strokeDasharray="2 3" />
+      <line x1="280" y1="25" x2="280" y2="200" stroke="rgba(128,232,255,0.35)" strokeWidth="1" strokeDasharray="2 3" />
 
-      <circle cx="40" cy="185" r="3.5" fill="#b6d2bb" />
-      <circle cx="190" cy="105" r="3.5" fill="#b6d2bb" />
-      <circle cx="280" cy="25" r="4.5" fill="#b6d2bb" />
+      <circle cx="40" cy="185" r="3.5" fill="#80e8ff" />
+      <circle cx="190" cy="105" r="3.5" fill="#80e8ff" />
+      <circle cx="280" cy="25" r="5" fill="#f4665d" />
 
-      <text x="32" y="212" fontFamily="ui-monospace, monospace" fontSize="9" fill="rgba(182,210,187,0.7)" letterSpacing="1">$1M</text>
-      <text x="178" y="212" fontFamily="ui-monospace, monospace" fontSize="9" fill="rgba(182,210,187,0.7)" letterSpacing="1">$3M</text>
-      <text x="266" y="212" fontFamily="ui-monospace, monospace" fontSize="9" fill="rgba(182,210,187,0.7)" letterSpacing="1">$5M</text>
+      <text x="32" y="212" fontFamily="ui-monospace, monospace" fontSize="9" fill="rgba(168,176,191,0.85)" letterSpacing="1">$1M</text>
+      <text x="178" y="212" fontFamily="ui-monospace, monospace" fontSize="9" fill="rgba(168,176,191,0.85)" letterSpacing="1">$3M</text>
+      <text x="266" y="212" fontFamily="ui-monospace, monospace" fontSize="9" fill="rgba(168,176,191,0.85)" letterSpacing="1">$5M</text>
     </svg>
   );
 }
@@ -44,20 +44,20 @@ function PlaybookVisual() {
 function DecisionsVisual() {
   return (
     <svg viewBox="0 0 320 220" preserveAspectRatio="xMidYMid slice">
-      <rect width="320" height="220" fill="#14141a" />
+      <rect width="320" height="220" fill="#131820" />
 
-      <circle cx="135" cy="80" r="48" fill="rgba(182,210,187,0.05)" stroke="rgba(158,193,170,0.55)" strokeWidth="1.5" />
-      <circle cx="200" cy="80" r="48" fill="rgba(182,210,187,0.05)" stroke="rgba(158,193,170,0.55)" strokeWidth="1.5" />
-      <circle cx="167" cy="135" r="48" fill="rgba(182,210,187,0.05)" stroke="rgba(158,193,170,0.55)" strokeWidth="1.5" />
+      <circle cx="135" cy="80" r="48" fill="rgba(128,232,255,0.06)" stroke="rgba(128,232,255,0.55)" strokeWidth="1.5" />
+      <circle cx="200" cy="80" r="48" fill="rgba(0,102,225,0.08)" stroke="rgba(0,102,225,0.7)" strokeWidth="1.5" />
+      <circle cx="167" cy="135" r="48" fill="rgba(244,102,93,0.06)" stroke="rgba(244,102,93,0.55)" strokeWidth="1.5" />
 
-      <line x1="115" y1="103" x2="219" y2="103" stroke="rgba(182,210,187,0.28)" strokeWidth="1" strokeDasharray="2 3" />
-      <line x1="167" y1="62" x2="167" y2="144" stroke="rgba(182,210,187,0.28)" strokeWidth="1" strokeDasharray="2 3" />
+      <line x1="115" y1="103" x2="219" y2="103" stroke="rgba(168,176,191,0.28)" strokeWidth="1" strokeDasharray="2 3" />
+      <line x1="167" y1="62" x2="167" y2="144" stroke="rgba(168,176,191,0.28)" strokeWidth="1" strokeDasharray="2 3" />
 
-      <circle cx="167" cy="103" r="4.5" fill="#b6d2bb" />
+      <circle cx="167" cy="103" r="5" fill="#f4665d" />
 
-      <text x="78" y="55" fontFamily="ui-monospace, monospace" fontSize="9" fill="rgba(182,210,187,0.7)" letterSpacing="1">MARGIN</text>
-      <text x="220" y="55" fontFamily="ui-monospace, monospace" fontSize="9" fill="rgba(182,210,187,0.7)" letterSpacing="1">CASH</text>
-      <text x="142" y="200" fontFamily="ui-monospace, monospace" fontSize="9" fill="rgba(182,210,187,0.7)" letterSpacing="1">CHANNEL</text>
+      <text x="78" y="55" fontFamily="ui-monospace, monospace" fontSize="9" fill="rgba(128,232,255,0.85)" letterSpacing="1">MARGIN</text>
+      <text x="220" y="55" fontFamily="ui-monospace, monospace" fontSize="9" fill="rgba(128,232,255,0.85)" letterSpacing="1">CASH</text>
+      <text x="142" y="200" fontFamily="ui-monospace, monospace" fontSize="9" fill="rgba(244,102,93,0.85)" letterSpacing="1">CHANNEL</text>
     </svg>
   );
 }
@@ -65,28 +65,28 @@ function DecisionsVisual() {
 function QuantifiedVisual() {
   return (
     <svg viewBox="0 0 320 220" preserveAspectRatio="xMidYMid slice">
-      <rect width="320" height="220" fill="#14141a" />
+      <rect width="320" height="220" fill="#131820" />
 
       <rect x="20" y="20" width="88" height="84" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" />
-      <path d="M32,84 L52,62 L72,72 L96,46" fill="none" stroke="#9ec1aa" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-      <circle cx="96" cy="46" r="2.5" fill="#b6d2bb" />
+      <path d="M32,84 L52,62 L72,72 L96,46" fill="none" stroke="#80e8ff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="96" cy="46" r="2.8" fill="#f4665d" />
 
       <rect x="116" y="20" width="88" height="84" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" />
-      <rect x="128" y="68" width="8" height="22" fill="rgba(182,210,187,0.4)" />
-      <rect x="142" y="58" width="8" height="32" fill="rgba(182,210,187,0.55)" />
-      <rect x="156" y="48" width="8" height="42" fill="rgba(182,210,187,0.7)" />
-      <rect x="170" y="40" width="8" height="50" fill="rgba(182,210,187,0.85)" />
-      <rect x="184" y="52" width="8" height="38" fill="rgba(182,210,187,0.65)" />
+      <rect x="128" y="68" width="8" height="22" fill="rgba(0,102,225,0.4)" />
+      <rect x="142" y="58" width="8" height="32" fill="rgba(0,102,225,0.55)" />
+      <rect x="156" y="48" width="8" height="42" fill="rgba(0,102,225,0.7)" />
+      <rect x="170" y="40" width="8" height="50" fill="rgba(0,102,225,0.9)" />
+      <rect x="184" y="52" width="8" height="38" fill="rgba(0,102,225,0.65)" />
 
       <rect x="212" y="20" width="88" height="84" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" />
-      <text x="256" y="72" fontFamily="ui-monospace, monospace" fontSize="26" fontWeight="500" fill="#b6d2bb" textAnchor="middle">+18%</text>
+      <text x="256" y="72" fontFamily="ui-monospace, monospace" fontSize="26" fontWeight="500" fill="#80e8ff" textAnchor="middle">+18%</text>
 
       <rect x="20" y="116" width="88" height="84" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" />
-      <text x="64" y="168" fontFamily="ui-monospace, monospace" fontSize="22" fontWeight="500" fill="#b6d2bb" textAnchor="middle">$5.4M</text>
+      <text x="64" y="168" fontFamily="ui-monospace, monospace" fontSize="22" fontWeight="500" fill="#fbf9f7" textAnchor="middle">$5.4M</text>
 
       <rect x="116" y="116" width="88" height="84" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" />
-      <path d="M126,180 L138,168 L150,174 L162,156 L174,164 L186,144 L196,150" fill="none" stroke="#9ec1aa" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-      <circle cx="196" cy="150" r="2.5" fill="#b6d2bb" />
+      <path d="M126,180 L138,168 L150,174 L162,156 L174,164 L186,144 L196,150" fill="none" stroke="#80e8ff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="196" cy="150" r="2.8" fill="#f4665d" />
 
       <rect x="212" y="116" width="88" height="84" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" />
       <circle cx="256" cy="158" r="22" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="3.5" />
@@ -95,7 +95,7 @@ function QuantifiedVisual() {
         cy="158"
         r="22"
         fill="none"
-        stroke="#b6d2bb"
+        stroke="#0066e1"
         strokeWidth="3.5"
         strokeDasharray="103.7 138.2"
         strokeLinecap="round"
@@ -149,6 +149,7 @@ export function Approach() {
     <section className="services" id="approach">
       <div className="container">
         <div className="services-header">
+          <div className="eyebrow on-dark reveal">Who we work with</div>
           <h2 className="headline center reveal">
             Three stages of brand,{" "}
             <span className="serif">three ways we plug in.</span>

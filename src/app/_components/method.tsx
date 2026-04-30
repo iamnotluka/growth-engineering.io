@@ -3,6 +3,7 @@ export function Method() {
     <section className="method" id="method">
       <div className="container method-grid">
         <div>
+          <div className="eyebrow on-dark reveal">The process</div>
           <h2 className="headline reveal">
             A process built to deliver clarity,{" "}
             <span className="serif">strategy, and long-term value.</span>
@@ -14,7 +15,7 @@ export function Method() {
 
         <div className="method-cards">
           <div className="method-card reveal reveal-delay-1">
-            <div className="method-card-num">01 / Assess</div>
+            <div className="method-card-num">Step 1: Assess</div>
             <div className="method-card-title">Pull the data, model it true</div>
             <div className="method-card-body">
               We build a real picture of how the business works today — <strong>revenue structure, contribution margin, AOV, repeat behaviour, LTV, CAC, and cash.</strong>
@@ -22,7 +23,7 @@ export function Method() {
           </div>
 
           <div className="method-card reveal reveal-delay-2">
-            <div className="method-card-num">02 / Diagnose</div>
+            <div className="method-card-num">Step 2: Diagnose</div>
             <div className="method-card-title">Find the bottleneck</div>
             <div className="method-card-body">
               We analyse what the data revealed and <strong>find what is actually holding back profitable growth</strong> — cause, not symptom.
@@ -30,7 +31,7 @@ export function Method() {
           </div>
 
           <div className="method-card reveal reveal-delay-3">
-            <div className="method-card-num">03 / Direct</div>
+            <div className="method-card-num">Step 3: Direct</div>
             <div className="method-card-title">Translate it into a plan</div>
             <div className="method-card-body">
               We turn the diagnosis into <strong>specific actions, success metrics, and what it will take to execute.</strong>
@@ -38,7 +39,7 @@ export function Method() {
           </div>
 
           <div className="method-card reveal reveal-delay-4">
-            <div className="method-card-num">04 / Stay close</div>
+            <div className="method-card-num">Step 4: Stay close</div>
             <div className="method-card-title">Run it together</div>
             <div className="method-card-body">
               The work doesn&apos;t end at delivery. <strong>We provide continuous guidance</strong> while you run the plan — so you keep the confidence to move quickly.

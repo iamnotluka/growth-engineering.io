@@ -13,7 +13,7 @@ export function Trust() {
   return (
     <section className="trust">
       <div className="container">
-        <p className="trust-eyebrow reveal">Trusted by operators</p>
+        <div className="trust-eyebrow reveal">Trusted by</div>
         <p className="trust-sub reveal">
           We work with brands rebuilding the numbers behind real revenue and real product.
         </p>

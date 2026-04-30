@@ -5,8 +5,8 @@ export function Principles() {
         <svg viewBox="0 0 1100 320" preserveAspectRatio="none">
           <defs>
             <linearGradient id="prinFill" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#6fa88a" stopOpacity="0.16" />
-              <stop offset="100%" stopColor="#6fa88a" stopOpacity="0" />
+              <stop offset="0%" stopColor="#0066e1" stopOpacity="0.14" />
+              <stop offset="100%" stopColor="#0066e1" stopOpacity="0" />
             </linearGradient>
           </defs>
           <path
@@ -16,8 +16,8 @@ export function Principles() {
           <path
             d="M0,210 C 100,180 200,120 320,140 C 440,160 540,250 660,230 C 780,210 880,140 1000,160 L 1100,180"
             fill="none"
-            stroke="#9ec1aa"
-            strokeWidth="1.6"
+            stroke="#0066e1"
+            strokeWidth="1.8"
             strokeLinecap="round"
           />
         </svg>
@@ -26,6 +26,7 @@ export function Principles() {
       <div className="container principles-inner">
         <div className="principles-header">
           <div>
+            <div className="eyebrow reveal">Principles</div>
             <h2 className="headline reveal">
               Clear thinking.{" "}
               <span className="serif">Compound growth.</span>

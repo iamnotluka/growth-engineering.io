@@ -4,6 +4,7 @@ export function Contact() {
       <div className="container">
         <div className="contact-band reveal">
           <div className="contact-band-inner">
+            <div className="eyebrow on-dark">Begin</div>
             <h2 className="contact-title">
               A conversation about{" "}
               <span className="serif">the business.</span>
