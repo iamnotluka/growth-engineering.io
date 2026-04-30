@@ -20,7 +20,7 @@ function DashboardCard() {
   return (
     <div className="hero-card hero-card-1">
       <div className="mock-head">
-        <div className="t">Contribution Margin — Last 90 Days</div>
+        <div className="d">ADD Report Card</div>
         <div className="d">Assess · v1.2</div>
       </div>
       <div className="mock-stats">
@@ -93,7 +93,7 @@ function DashboardCard() {
 const stripItems = [
   "Assess · Diagnose · Direct",
   "Brisbane, QLD",
-  "Brands $1M — $5M+",
+  "Brands $1M - $5M+",
   "Evidence over opinion",
   "Eight metrics tracked",
   "Working with brands Australia-wide",
@@ -143,7 +143,7 @@ export function Hero() {
             </p>
             <div className="hero-actions">
               <a href="#contact" className="btn btn-acid">
-                Book a strategy call
+                Apply now
               </a>
             </div>
           </div>

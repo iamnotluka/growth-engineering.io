@@ -1,77 +1,119 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useActionState } from "react";
+import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
+import "react-phone-number-input/style.css";
+import { sendContact, type ContactState } from "../_actions/contact";
+
+const MRR_OPTIONS = [
+  "0 – 50k per month",
+  "50k – 100k per month",
+  "100k – 250k per month",
+  "250k – 500k per month",
+  "500k – 1M per month",
+  "1M+ per month",
+];
+
+const initialState: ContactState = { ok: false, error: null };
 
 export function Contact() {
-  const [booked, setBooked] = useState(false);
+  const [state, action, pending] = useActionState(sendContact, initialState);
+  const [phone, setPhone] = useState<string | undefined>();
+  const [phoneTouched, setPhoneTouched] = useState(false);
+
+  const phoneInvalid = phoneTouched && phone !== undefined && !isValidPhoneNumber(phone);
 
   return (
-    <>
-      <section className="contact" id="contact">
-        <div className="container">
-          <div className="contact-grid">
-            <div>
-              <h2 className="contact-title">
-                A conversation
-                <span className="ital">about the business.</span>
-              </h2>
-              <p className="contact-sub">
-                The first call is thirty minutes, at no cost, and deliberately
-                useful. We talk through where the business is, what&rsquo;s
-                working, and what isn&rsquo;t. If we&rsquo;re a fit, we&rsquo;ll
-                say so. If not, we&rsquo;ll usually point you somewhere that
-                is.
-              </p>
-              <button
-                className="contact-cta-large"
-                onClick={() => setBooked(true)}
-              >
-                Book a strategy call
-              </button>
-            </div>
-            <div className="contact-meta">
-              <div>
-                <div className="contact-meta-lbl">Email</div>
-                <div className="contact-meta-val">
-                  <a href="mailto:hello@growth-engineering.io">
-                    hello@growth-engineering.io
-                  </a>
-                </div>
-              </div>
-              <div>
-                <div className="contact-meta-lbl">Based</div>
-                <div className="contact-meta-val">Brisbane, QLD</div>
-              </div>
-              <div>
-                <div className="contact-meta-lbl">Working with</div>
-                <div className="contact-meta-val">Brands Australia-wide</div>
-              </div>
-              <div>
-                <div className="contact-meta-lbl">Web</div>
-                <div className="contact-meta-val">growth-engineering.io</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <section className="contact" id="contact">
+      <div className="container">
+        <div className="contact-body">
+          <h2 className="contact-title">
+            A conversation
+            <span className="ital">about the business.</span>
+          </h2>
+          <p className="contact-sub">
+            Let&rsquo;s connect. Drop your details, we&rsquo;ll check if
+            you&rsquo;re the right fit, and we&rsquo;ll reach out to you.
+          </p>
 
-      <div
-        className={"ty-overlay" + (booked ? " open" : "")}
-        onClick={() => setBooked(false)}
-      >
-        <div className="ty-card" onClick={(e) => e.stopPropagation()}>
-          <div className="ty-eyebrow">Thanks.</div>
-          <div className="ty-title">We&rsquo;ll be in touch.</div>
-          <div className="ty-body">
-            In production this opens a scheduling link. Expect a thirty-minute
-            call, a few questions about the business, and a direct answer
-            either way.
-          </div>
-          <button className="ty-close" onClick={() => setBooked(false)}>
-            Close
-          </button>
+          {state.ok ? (
+            <div className="contact-success">
+              <p>We&rsquo;ll get back to you ASAP. Speak soon!</p>
+            </div>
+          ) : (
+            <form className="contact-form" action={action}>
+              <label className="cf-field">
+                <span className="cf-lbl">Your name</span>
+                <input name="name" type="text" required autoComplete="name" />
+              </label>
+              <label className="cf-field">
+                <span className="cf-lbl">Your business website</span>
+                <input
+                  name="website"
+                  type="text"
+                  required
+                  placeholder="yourbrand.com"
+                  autoComplete="url"
+                />
+              </label>
+              <label className="cf-field">
+                <span className="cf-lbl">Your MRR</span>
+                <select name="mrr" required defaultValue="">
+                  <option value="" disabled>
+                    Select a range
+                  </option>
+                  {MRR_OPTIONS.map((m) => (
+                    <option key={m} value={m}>
+                      {m}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <div className="cf-field">
+                <span className="cf-lbl">Your contact number</span>
+                <PhoneInput
+                  international
+                  defaultCountry="AU"
+                  name="phone"
+                  value={phone}
+                  onChange={setPhone}
+                  onBlur={() => setPhoneTouched(true)}
+                  required
+                  className={
+                    "cf-phone" + (phoneInvalid ? " cf-phone-invalid" : "")
+                  }
+                />
+                {phoneInvalid && (
+                  <span className="cf-hint">Enter a valid phone number.</span>
+                )}
+              </div>
+              <label className="cf-field">
+                <span className="cf-lbl">Your email</span>
+                <input
+                  name="email"
+                  type="email"
+                  required
+                  autoComplete="email"
+                />
+              </label>
+
+              {state.error && (
+                <div className="cf-error" role="alert">
+                  {state.error}
+                </div>
+              )}
+
+              <button
+                type="submit"
+                className="contact-cta-large"
+                disabled={pending || phoneInvalid}
+              >
+                {pending ? "Sending…" : "Apply now"}
+              </button>
+            </form>
+          )}
         </div>
       </div>
-    </>
+    </section>
   );
 }

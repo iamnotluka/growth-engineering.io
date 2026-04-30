@@ -1,3 +1,5 @@
+import { Logo } from "./logo";
+
 const links = [
   { id: "approach", label: "Approach" },
   { id: "method", label: "Method" },
@@ -10,8 +12,8 @@ export function Nav() {
     <nav className="site-nav">
       <div className="container nav-inner">
         <a href="#top" className="wordmark">
-          <span className="wordmark-mark" />
-          Growth Engineering
+          <Logo size={22} className="wordmark-logo" />
+          growth-engineering.io
         </a>
         <ul className="nav-links">
           {links.map((l) => (
@@ -21,7 +23,7 @@ export function Nav() {
           ))}
         </ul>
         <a href="#contact" className="nav-cta">
-          Strategy call
+          Apply now
         </a>
       </div>
     </nav>

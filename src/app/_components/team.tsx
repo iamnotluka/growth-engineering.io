@@ -49,7 +49,7 @@ export function Team() {
             name="James"
             role="Co-founder · Operations & marketing"
             dark
-            bio="CMO at an eCommerce brand doing $1m per month. Brings the operator's view — what actually moves in a DTC business, and what doesn't, once the theory meets the P&L."
+            bio="CMO at an eCommerce brand doing $1m per month. Brings the operator's view - what actually moves in a DTC business, and what doesn't, once the theory meets the P&L."
           />
         </div>
       </div>

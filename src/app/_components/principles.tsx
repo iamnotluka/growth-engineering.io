@@ -12,7 +12,7 @@ const items = [
   {
     num: "03",
     title: "Clarity, direction, confidence.",
-    body: "Founders do not need more information. You need clarity, direction, and a second thought on the hard calls — so you can move quickly instead of second-guessing.",
+    body: "Founders do not need more information. You need clarity, direction, and a second thought on the hard calls - so you can move quickly instead of second-guessing.",
   },
   {
     num: "04",

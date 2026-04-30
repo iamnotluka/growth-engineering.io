@@ -4,7 +4,7 @@ export function Manifesto() {
       <div className="container-narrow">
         <p className="manifesto-quote">
           <span className="dim">
-            Most advisors sell you a product — a framework, a course, a system
+            Most advisors sell you a product - a framework, a course, a system
             packaged to work for everyone.
           </span>{" "}
           You are past that. Your problem is specific to{" "}

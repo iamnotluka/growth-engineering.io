@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Growth Engineering — Advisory for eCommerce founders",
+  title: "Growth Engineering - Advisory for eCommerce founders",
   description:
     "Most founders don't have a growth problem. They have a clarity problem. We read the numbers behind your business, find what's limiting profitable scale, and give you a plan you can actually run.",
 };

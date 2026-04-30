@@ -15,7 +15,7 @@ const tiers: Tier[] = [
     body: (
       <>
         Roughly 20% margin, around $200k profit, inventory eating your cash, no
-        real team. <strong>We help you run the playbook</strong> — or mentor
+        real team. <strong>We help you run the playbook</strong> - or mentor
         your first hire to run it.
       </>
     ),
@@ -26,7 +26,7 @@ const tiers: Tier[] = [
     line: "You know the priorities. You need the time and second brain.",
     body: (
       <>
-        You know roughly what to prioritise — you just don&rsquo;t have the
+        You know roughly what to prioritise - you just don&rsquo;t have the
         time, and the decisions are getting harder.{" "}
         <strong>We join you to help make those decisions</strong>, because we
         can see the whole picture.
@@ -71,6 +71,11 @@ export function Approach() {
             <br />
             <span className="ital">Unclear numbers.</span>
           </h2>
+          <p className="lead">
+            We&rsquo;ve worked with brands across the full revenue spectrum.
+            We know what each stage needs - and how to fit into yours so the
+            work actually pays off.
+          </p>
         </div>
         <div className="approach-cards">
           {tiers.map((t, i) => (
