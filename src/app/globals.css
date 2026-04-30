@@ -835,8 +835,8 @@ section { padding: clamp(80px, 12vw, 160px) 0; }
     linear-gradient(180deg, var(--acid), var(--acid-deep));
   color: #fff;
   padding: 16px 24px;
-  border-radius: 999px;
-  font-size: 15px; font-weight: 500;
+  border-radius: 14px;
+  font-size: 16px; font-weight: 500;
   border: 1px solid rgba(255,255,255,0.20);
   cursor: pointer;
   backdrop-filter: saturate(180%) blur(14px);
@@ -869,9 +869,8 @@ section { padding: clamp(80px, 12vw, 160px) 0; }
 .cf-field { display: flex; flex-direction: column; gap: 6px; }
 .cf-lbl {
   font-family: var(--display);
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0;
   color: var(--ink-muted);
 }
 .contact-form input,
@@ -884,11 +883,11 @@ section { padding: clamp(80px, 12vw, 160px) 0; }
     linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0) 60%),
     rgba(255, 255, 255, 0.03);
   border: 1px solid var(--rule);
-  border-radius: 999px;
-  padding: 14px 22px;
+  border-radius: 14px;
+  padding: 14px 18px;
   color: var(--ink);
   font-family: var(--display);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   outline: none;
@@ -911,17 +910,17 @@ section { padding: clamp(80px, 12vw, 160px) 0; }
     linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0) 60%),
     url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1l5 5 5-5' stroke='%238a8f98' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
   background-repeat: no-repeat;
-  background-position: right 22px center;
+  background-position: right 18px center;
   background-size: auto, 12px;
-  padding-right: 44px;
+  padding-right: 40px;
 }
 
-/* Phone input widget — country picker + number, styled as one rounded pill */
+/* Phone input widget — country picker + number, styled as one rounded field */
 .cf-phone {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 0 22px;
+  padding: 0 18px;
 }
 .cf-phone .PhoneInputCountry {
   position: relative;
@@ -977,7 +976,7 @@ section { padding: clamp(80px, 12vw, 160px) 0; }
   padding: 14px 0;
   color: var(--ink);
   font-family: var(--display);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
 }
 .cf-phone .PhoneInputInput::placeholder {
@@ -990,7 +989,7 @@ section { padding: clamp(80px, 12vw, 160px) 0; }
 .cf-hint {
   font-size: 12px;
   color: #ff8e8e;
-  padding-left: 22px;
+  padding-left: 18px;
   margin-top: 2px;
 }
 .cf-error {

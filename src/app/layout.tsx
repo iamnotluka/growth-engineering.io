@@ -8,10 +8,47 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const SITE_URL = "https://growth-engineering.io";
+const TITLE = "Growth Engineering - Advisory for eCommerce founders";
+const DESCRIPTION =
+  "Most founders don't have a growth problem. They have a clarity problem. We read the numbers behind your business, find what's limiting profitable scale, and give you a plan you can actually run.";
+
 export const metadata: Metadata = {
-  title: "Growth Engineering - Advisory for eCommerce founders",
-  description:
-    "Most founders don't have a growth problem. They have a clarity problem. We read the numbers behind your business, find what's limiting profitable scale, and give you a plan you can actually run.",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
+  applicationName: "growth-engineering.io",
+  authors: [{ name: "Luka" }, { name: "James" }],
+  creator: "growth-engineering.io",
+  publisher: "growth-engineering.io",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    siteName: "growth-engineering.io",
+    title: TITLE,
+    description: DESCRIPTION,
+    locale: "en_AU",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  category: "business",
 };
 
 export default function RootLayout({

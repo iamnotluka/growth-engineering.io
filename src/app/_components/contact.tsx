@@ -43,11 +43,11 @@ export function Contact() {
           ) : (
             <form className="contact-form" action={action}>
               <label className="cf-field">
-                <span className="cf-lbl">Your name</span>
+                <span className="cf-lbl">Name</span>
                 <input name="name" type="text" required autoComplete="name" />
               </label>
               <label className="cf-field">
-                <span className="cf-lbl">Your business website</span>
+                <span className="cf-lbl">Website</span>
                 <input
                   name="website"
                   type="text"
@@ -57,7 +57,7 @@ export function Contact() {
                 />
               </label>
               <label className="cf-field">
-                <span className="cf-lbl">Your MRR</span>
+                <span className="cf-lbl">MRR</span>
                 <select name="mrr" required defaultValue="">
                   <option value="" disabled>
                     Select a range
@@ -70,7 +70,7 @@ export function Contact() {
                 </select>
               </label>
               <div className="cf-field">
-                <span className="cf-lbl">Your contact number</span>
+                <span className="cf-lbl">Phone</span>
                 <PhoneInput
                   international
                   defaultCountry="AU"
@@ -88,7 +88,7 @@ export function Contact() {
                 )}
               </div>
               <label className="cf-field">
-                <span className="cf-lbl">Your email</span>
+                <span className="cf-lbl">Email</span>
                 <input
                   name="email"
                   type="email"
