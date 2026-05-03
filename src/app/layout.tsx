@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Spectral, IBM_Plex_Mono } from "next/font/google";
+import { Inter, Spectral, IBM_Plex_Mono, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -19,6 +19,13 @@ const plexMono = IBM_Plex_Mono({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-plex-mono",
+});
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+  variable: "--font-instrument-serif",
 });
 
 const SITE_URL = "https://growth-engineering.io";
@@ -70,7 +77,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${spectral.variable} ${plexMono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${spectral.variable} ${plexMono.variable} ${instrumentSerif.variable}`}>
       <body>{children}</body>
     </html>
   );

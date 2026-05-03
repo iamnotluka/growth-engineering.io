@@ -308,11 +308,11 @@ nav.site-nav {
 }
 .hero-title-emph {
   display: block;
-  font-family: var(--display);
+  font-family: var(--font-instrument-serif), Georgia, "Times New Roman", serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
   color: var(--ink-muted);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   margin-top: 0.06em;
 }
 
@@ -333,10 +333,10 @@ nav.site-nav {
   align-items: center;
 }
 .hero-fineprint {
-  font-family: var(--font-plex-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-family: var(--font-instrument-serif), Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
   color: var(--ink-faint);
 }
 
