@@ -1678,29 +1678,6 @@ section { padding: clamp(72px, 8vw, 120px) 0; }
   border-radius: 999px;
 }
 
-.contact-alt {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 8px 12px;
-  font-family: var(--display);
-  font-size: 14px;
-  padding-top: 24px;
-  border-top: 1px solid var(--rule);
-}
-.contact-alt-lbl { color: var(--ink-muted); }
-.contact-alt-link {
-  color: var(--ink);
-  font-weight: 500;
-  border-bottom: 1px solid var(--rule-strong);
-  padding-bottom: 1px;
-  transition: border-color .2s ease, color .2s ease;
-}
-.contact-alt-link:hover {
-  color: var(--acid-deep);
-  border-bottom-color: var(--acid-deep);
-}
-
 .contact-right { width: 100%; }
 
 .contact-form-head {
@@ -2134,11 +2111,6 @@ footer.site-footer {
   color: var(--on-dark-fnt);
   letter-spacing: 0.02em;
 }
-.footer-tag {
-  font-style: italic;
-  color: var(--on-dark-mut);
-}
-
 /* ============================================================
    Modal
    ============================================================ */

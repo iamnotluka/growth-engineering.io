@@ -46,11 +46,6 @@ export function SiteFooter() {
             <div className="footer-eye">Contact</div>
             <ul>
               <li>
-                <a href="mailto:hello@growth-engineering.io">
-                  hello@growth-engineering.io
-                </a>
-              </li>
-              <li>
                 <a
                   href="https://www.linkedin.com/in/luka-zoric/"
                   target="_blank"
@@ -92,7 +87,6 @@ export function SiteFooter() {
 
         <div className="footer-bottom">
           <div>&copy; {YEAR} growth-engineering.io</div>
-          <div className="footer-tag">Evidence over opinion.</div>
         </div>
       </div>
     </footer>

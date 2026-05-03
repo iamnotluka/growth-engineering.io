@@ -15,7 +15,7 @@ const MRR_OPTIONS = [
 ];
 
 const STEPS: { n: string; head: string; meta: string }[] = [
-  { n: "01", head: "Submit the form", meta: "Takes about two minutes." },
+  { n: "01", head: "Submit the form", meta: "Takes 90 seconds." },
   {
     n: "02",
     head: "We review fit",
@@ -79,16 +79,6 @@ export function Contact() {
                 <li key={r}>{r}</li>
               ))}
             </ul>
-
-            <div className="contact-alt">
-              <span className="contact-alt-lbl">Prefer email?</span>
-              <a
-                className="contact-alt-link"
-                href="mailto:hello@growth-engineering.io"
-              >
-                hello@growth-engineering.io
-              </a>
-            </div>
           </div>
 
           {/* RIGHT — form */}
@@ -105,7 +95,7 @@ export function Contact() {
               <form className="contact-form" action={action}>
                 <div className="contact-form-head">
                   <span className="contact-form-eye">Apply</span>
-                  <span className="contact-form-meta">~2 min</span>
+                  <span className="contact-form-meta">90 seconds</span>
                 </div>
 
                 <label className="cf-field">
