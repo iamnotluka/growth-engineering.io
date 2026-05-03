@@ -4,12 +4,12 @@ export function Manifesto() {
       <div className="container-narrow">
         <p className="manifesto-quote">
           <span className="dim">
-            Most advisors sell you a product - a framework, a course, a system
-            packaged to work for everyone.
+            Most advisors sell you a product &mdash; a framework, a course, a
+            system packaged to work for everyone.
           </span>{" "}
           You are past that. Your problem is specific to{" "}
-          <span className="acc">your</span> business. You need someone who goes
-          back to first principles and models it on the evidence.
+          <span className="acc">your</span> business. You need someone who
+          works from first principles, on the evidence.
         </p>
       </div>
     </section>
