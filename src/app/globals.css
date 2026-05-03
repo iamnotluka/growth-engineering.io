@@ -871,11 +871,11 @@ section { padding: clamp(72px, 8vw, 120px) 0; }
 }
 .approach-card-rev-num {
   font-family: var(--display);
-  font-weight: 700;
-  font-size: clamp(72px, 7vw, 96px);
+  font-weight: 500;
+  font-size: clamp(64px, 6.5vw, 96px);
   letter-spacing: -0.05em;
   color: var(--ink);
-  line-height: 0.92;
+  line-height: 0.88;
   font-feature-settings: "lnum", "tnum";
 }
 .approach-card-rev-suf {
@@ -2182,6 +2182,11 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   width: auto;
   height: auto;
   object-fit: contain;
+}
+@media (max-width: 640px) {
+  .client-logo { height: 96px; width: 280px; }
+  .client-logo[aria-label="Oloe"] { height: 67px; width: 192px; }
+  .client-logo[aria-label="FitAZ"] { height: 132px; width: 340px; }
 }
 
 /* ============================================================

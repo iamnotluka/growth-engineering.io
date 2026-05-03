@@ -6,7 +6,6 @@
 type Metric = { label: string; value: string };
 
 type Case = {
-  index: string;
   brand: string;
   hook: string;
   hero: { value: string; caption: string };
@@ -16,7 +15,6 @@ type Case = {
 
 const CASES: Case[] = [
   {
-    index: "01",
     brand: "The Brothers Green",
     hook: "Inherited a vertically integrated declining brand. Built a multi-market, multi-channel machine across NZ, AU and wholesale.",
     hero: { value: "25×", caption: "Revenue growth, 24 months" },
@@ -27,7 +25,6 @@ const CASES: Case[] = [
     closing: "Engineered for profit, not just growth.",
   },
   {
-    index: "02",
     brand: "Furmoo",
     hook: "Scaled revenue 72% in four months while ad spend nearly doubled. The P&L stayed intact.",
     hero: { value: "+72%", caption: "Revenue, four months" },
@@ -38,7 +35,6 @@ const CASES: Case[] = [
     closing: "Profit grew with revenue, not behind it.",
   },
   {
-    index: "03",
     brand: "OLOE",
     hook: "Their first month with us beat their previous Black Friday. At full price. Profitable from week one.",
     hero: { value: "+55%", caption: "Orders vs Black Friday" },
@@ -49,7 +45,6 @@ const CASES: Case[] = [
     closing: "Clarity on the unit economics unlocked the spend.",
   },
   {
-    index: "04",
     brand: "FITAZ",
     hook: "Started end of Q2. The first full quarter was an all-time record, on revenue and profit, with less ad spend.",
     hero: { value: "149%", caption: "Of profit target, Q3" },
@@ -61,11 +56,9 @@ const CASES: Case[] = [
   },
 ];
 
-function CaseCell({ index, brand, hook, hero, metrics, closing }: Case) {
+function CaseCell({ brand, hook, hero, metrics, closing }: Case) {
   return (
     <article className="case-cell">
-      <span className="case-cell-index">{index}</span>
-
       <div className="case-cell-hero">
         <span className="case-cell-hero-val">{hero.value}</span>
         <span className="case-cell-hero-cap">{hero.caption}</span>
