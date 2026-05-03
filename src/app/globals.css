@@ -276,6 +276,9 @@ nav.site-nav {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 640px) {
+  .hero { padding-top: var(--pad-x); }
+}
 
 .hero-marker {
   display: flex;
@@ -350,11 +353,22 @@ nav.site-nav {
   align-items: center;
   margin-bottom: clamp(96px, 13vh, 160px);
 }
+
 @media (max-width: 980px) {
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 56px;
+    /* Break .hero-text out so its children (title, rest) become grid
+       items — lets us slot the artwork between them. */
+    grid-template-areas:
+      "title"
+      "artwork"
+      "rest";
+    row-gap: 32px;
   }
+  .hero-text { display: contents; }
+  .hero-title { grid-area: title; margin-bottom: 0; }
+  .hero-rest { grid-area: rest; }
+  .hero-artwork { grid-area: artwork; }
 }
 
 .hero-artwork {
@@ -366,11 +380,16 @@ nav.site-nav {
   .hero-artwork {
     max-width: 420px;
     justify-self: center;
-    margin-top: 24px;
+    margin-top: 0;
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 640px) {
-  .hero-artwork { display: none; }
+  .hero-artwork {
+    max-width: 100%;
+    margin-top: 8px;
+    padding: 24px 40px 64px;
+  }
   .hero-actions { flex-direction: column; align-items: stretch; gap: 16px; }
   .hero-actions .btn { width: 100%; justify-content: center; }
   .hero-fineprint { text-align: center; }
@@ -422,9 +441,6 @@ nav.site-nav {
 }
 .hero-art-tools:hover .hero-art-tool {
   transform: rotate(0deg) translateY(-2px) !important;
-}
-@media (max-width: 720px) {
-  .hero-art-tool { display: none; }
 }
 .hero-art-card::before {
   /* Subtle top notch — gives it a "document" feel */
@@ -586,6 +602,27 @@ nav.site-nav {
   width: 24px;
   height: 1px;
   background: var(--ink-faint);
+}
+
+/* Mobile compaction for the unit-economics card. Placed after base rules
+   so source order resolves overrides without !important. */
+@media (max-width: 640px) {
+  .hero-art { gap: 6px; }
+  .hero-art-card { padding: 10px 12px 8px; }
+  .hero-art-head { margin-bottom: 4px; }
+  .hero-art-head-title { font-size: 11px; }
+  .hero-art-head-meta { font-size: 8.5px; }
+  .hero-art-rows { gap: 0; }
+  .hero-art-row { padding: 4px 2px; gap: 10px; }
+  .hero-art-row-lbl { font-size: 10px; }
+  .hero-art-row-right { gap: 1px; min-width: 56px; }
+  .hero-art-row-val { font-size: 11px; }
+  .hero-art-row-note { font-size: 8px; letter-spacing: 0.04em; }
+  .hero-art-row-flagged { margin: 2px -6px; padding: 5px 8px 5px 10px; }
+  .hero-art-row-flagged .hero-art-row-val { font-size: 13px; }
+  .hero-art-dash { width: 28px; height: 1px; }
+  .hero-art-foot { margin-top: 4px; font-size: 8.5px; gap: 7px; }
+  .hero-art-foot-dot { width: 5px; height: 5px; box-shadow: 0 0 0 2px rgba(122, 179, 66, 0.18); }
 }
 
 .hero-strip {

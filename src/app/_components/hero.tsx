@@ -45,19 +45,21 @@ export function Hero() {
               Most ecommerce founders don&rsquo;t have a growth problem.
               <span className="hero-title-emph"> They have a clarity problem.</span>
             </h1>
-            <p className="hero-sub">
-              We read the numbers behind your business, find what&rsquo;s
-              limiting profitable scale, and hand you a plan that actually
-              moves them. The Profit Clarity Sprint, 12 weeks, built for
-              ecommerce brands.
-            </p>
-            <div className="hero-actions">
-              <a href="#contact" className="btn btn-acid">
-                Apply For Sprint
-              </a>
-              <span className="hero-fineprint">
-                Limited intake each quarter
-              </span>
+            <div className="hero-rest">
+              <p className="hero-sub">
+                We read the numbers behind your business, find what&rsquo;s
+                limiting profitable scale, and hand you a plan that actually
+                moves them. The Profit Clarity Sprint, 12 weeks, built for
+                ecommerce brands.
+              </p>
+              <div className="hero-actions">
+                <a href="#contact" className="btn btn-acid">
+                  Apply For Sprint
+                </a>
+                <span className="hero-fineprint">
+                  Limited intake each quarter
+                </span>
+              </div>
             </div>
           </div>
           <div className="hero-artwork" aria-hidden="true">
