@@ -61,7 +61,7 @@ function TeamCard({
   return (
     <div className="team-card">
       <div className="team-photo">
-        <Image src={photo} alt={name} width={120} height={120} priority />
+        <Image src={photo} alt={name} width={120} height={120} />
       </div>
       <div className="team-body">
         <div className="team-name">{name}</div>
@@ -124,7 +124,7 @@ export function Team() {
         </div>
         <div className="team-cards">
           <TeamCard
-            photo="/luka.png"
+            photo="/luka.jpg"
             name="Luka"
             role="Analysis & systems"
             bio="Ex-Amazon software engineer and consultant to 7-8 figure businesses. Experienced in modelling, measurement and systemising businesses behind the scale."

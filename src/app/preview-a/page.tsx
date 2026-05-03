@@ -1,4 +1,17 @@
+import type { Metadata } from "next";
+import { Spectral } from "next/font/google";
 import "./preview-a.css";
+
+const spectral = Spectral({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  style: ["normal", "italic"],
+  variable: "--font-spectral",
+});
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 
 function SwitcherBar() {
   return (
@@ -12,7 +25,7 @@ function SwitcherBar() {
 
 export default function PreviewA() {
   return (
-    <div className="pa-page">
+    <div className={`pa-page ${spectral.variable}`}>
       <SwitcherBar />
 
       {/* HERO */}

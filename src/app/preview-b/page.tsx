@@ -1,4 +1,9 @@
+import type { Metadata } from "next";
 import "./preview-b.css";
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 
 function SwitcherBar() {
   return (

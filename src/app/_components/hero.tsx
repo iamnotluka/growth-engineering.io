@@ -11,9 +11,9 @@ const stripItems = [
   "Models, not frameworks",
 ];
 
-function StripRow() {
+function StripRow({ ariaHidden = false }: { ariaHidden?: boolean }) {
   return (
-    <span>
+    <span aria-hidden={ariaHidden ? "true" : undefined}>
       {stripItems.map((it, i) => (
         <span key={i} style={{ display: "inline-flex", alignItems: "center", gap: 56 }}>
           <span className="dot" />
@@ -29,7 +29,7 @@ function HeroStrip() {
     <div className="hero-strip">
       <div className="hero-strip-track">
         <StripRow />
-        <StripRow />
+        <StripRow ariaHidden />
       </div>
     </div>
   );

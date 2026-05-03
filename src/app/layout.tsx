@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
-import { Inter, Spectral, IBM_Plex_Mono, Instrument_Serif } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Inter, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -8,24 +8,10 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const spectral = Spectral({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-  style: ["normal", "italic"],
-  variable: "--font-spectral",
-});
-
 const plexMono = IBM_Plex_Mono({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-plex-mono",
-});
-
-const instrumentSerif = Instrument_Serif({
-  subsets: ["latin"],
-  weight: ["400"],
-  style: ["normal", "italic"],
-  variable: "--font-instrument-serif",
 });
 
 const SITE_URL = "https://growth-engineering.io";
@@ -71,13 +57,17 @@ export const metadata: Metadata = {
   category: "business",
 };
 
+export const viewport: Viewport = {
+  themeColor: "#7ab342",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${spectral.variable} ${plexMono.variable} ${instrumentSerif.variable}`}>
+    <html lang="en-AU" className={`${inter.variable} ${plexMono.variable}`}>
       <body>{children}</body>
     </html>
   );
