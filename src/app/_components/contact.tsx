@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useActionState } from "react";
+import { useEffect, useState, useActionState } from "react";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import { sendContact, type ContactState } from "../_actions/contact";
@@ -19,12 +19,12 @@ const STEPS: { n: string; head: string; meta: string }[] = [
   {
     n: "02",
     head: "We review fit",
-    meta: "We come back within one business day.",
+    meta: "We'll reach out with next steps.",
   },
   {
     n: "03",
     head: "30-minute call",
-    meta: "We check fit. Both ways.",
+    meta: "We get to know each other.",
   },
   {
     n: "04",
@@ -33,14 +33,16 @@ const STEPS: { n: string; head: string; meta: string }[] = [
   },
 ];
 
-const REASSURANCE = ["8–12 weeks", "Evidence-led", "Australia/NZ"];
-
 const initialState: ContactState = { ok: false, error: null };
 
 export function Contact() {
   const [state, action, pending] = useActionState(sendContact, initialState);
   const [phone, setPhone] = useState<string | undefined>();
   const [phoneTouched, setPhoneTouched] = useState(false);
+
+  useEffect(() => {
+    if (state.values?.phone) setPhone(state.values.phone);
+  }, [state.attempt, state.values?.phone]);
 
   const phoneInvalid =
     phoneTouched && phone !== undefined && !isValidPhoneNumber(phone);
@@ -73,12 +75,6 @@ export function Contact() {
                 </li>
               ))}
             </ol>
-
-            <ul className="contact-reassure" aria-label="Engagement details">
-              {REASSURANCE.map((r) => (
-                <li key={r}>{r}</li>
-              ))}
-            </ul>
           </div>
 
           {/* RIGHT — form */}
@@ -92,10 +88,13 @@ export function Contact() {
                 </p>
               </div>
             ) : (
-              <form className="contact-form" action={action}>
+              <form
+                key={state.attempt ?? 0}
+                className="contact-form"
+                action={action}
+              >
                 <div className="contact-form-head">
                   <span className="contact-form-eye">Apply</span>
-                  <span className="contact-form-meta">90 seconds</span>
                 </div>
 
                 <label className="cf-field">
@@ -106,6 +105,7 @@ export function Contact() {
                     required
                     autoComplete="name"
                     placeholder="Your name"
+                    defaultValue={state.values?.name ?? ""}
                   />
                 </label>
                 <label className="cf-field">
@@ -116,11 +116,16 @@ export function Contact() {
                     required
                     placeholder="yourbrand.com"
                     autoComplete="url"
+                    defaultValue={state.values?.website ?? ""}
                   />
                 </label>
                 <label className="cf-field">
                   <span className="cf-lbl">MRR</span>
-                  <select name="mrr" required defaultValue="">
+                  <select
+                    name="mrr"
+                    required
+                    defaultValue={state.values?.mrr ?? ""}
+                  >
                     <option value="" disabled>
                       Select a range
                     </option>
@@ -159,6 +164,18 @@ export function Contact() {
                     required
                     autoComplete="email"
                     placeholder="you@yourbrand.com"
+                    defaultValue={state.values?.email ?? ""}
+                  />
+                </label>
+                <label className="cf-field">
+                  <span className="cf-lbl">Location</span>
+                  <input
+                    name="location"
+                    type="text"
+                    required
+                    autoComplete="address-level2"
+                    placeholder="City, Country"
+                    defaultValue={state.values?.location ?? ""}
                   />
                 </label>
 

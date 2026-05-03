@@ -12,7 +12,7 @@ import { Problem } from "./_components/problem";
 import { Questions } from "./_components/questions";
 import { SiteFooter } from "./_components/site-footer";
 import { Team } from "./_components/team";
-import { Testimonials } from "./_components/testimonials";
+// import { Testimonials } from "./_components/testimonials";
 
 const SITE_URL = "https://growth-engineering.io";
 
@@ -85,7 +85,7 @@ export default function Home() {
       <Manifesto />
       <Method />
       <Principles />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Team />
       <Contact />
       <Partners />
