@@ -349,9 +349,11 @@ nav.site-nav {
 @media (max-width: 640px) {
   .hero-tools-row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
-    gap: 10px;
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
     margin: 0 0 44px 0;
   }
   .hero-tools-row-item {
