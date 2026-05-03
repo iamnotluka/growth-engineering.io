@@ -1,4 +1,4 @@
-import { HeroArtwork } from "./hero-artwork";
+import { HeroArtwork, HeroToolsRow } from "./hero-artwork";
 
 const stripItems = [
   "Assess · Diagnose · Direct",
@@ -39,6 +39,7 @@ export function Hero() {
   return (
     <section className="hero" id="top">
       <div className="container">
+        <HeroToolsRow />
         <div className="hero-grid">
           <div className="hero-text">
             <h1 className="hero-title">
@@ -57,7 +58,7 @@ export function Hero() {
                   Apply For Sprint
                 </a>
                 <span className="hero-fineprint">
-                  Limited intake each quarter
+                  Advisory for ecommerce businesses
                 </span>
               </div>
             </div>

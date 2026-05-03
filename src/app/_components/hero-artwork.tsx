@@ -185,6 +185,47 @@ function Dash() {
   return <span className="hero-art-dash" aria-hidden="true" />;
 }
 
+/**
+ * Mobile-only — same sticker glyphs, laid out as a single horizontal row
+ * above the headline. The full annotated card is hidden on phones; this
+ * preserves the tool-stack signal without taking the vertical space.
+ */
+export function HeroToolsRow() {
+  return (
+    <div className="hero-tools-row" aria-hidden="true">
+      {TOOLS.map((t, i) => {
+        const Icon = t.Icon;
+        // Sinusoidal wave across the row so icons ripple uniformly L→R.
+        const phase = (i / (TOOLS.length - 1)) * Math.PI * 2;
+        const ty = Math.sin(phase) * 7;
+        const rot = Math.cos(phase) * 7;
+        // Size — monotonic L→R falloff with smoothstep easing so the
+        // shrink isn't a straight linear ramp.
+        const p = i / (TOOLS.length - 1);
+        const ease = p * p * (3 - 2 * p);
+        const size = 46 - (46 - 28) * ease;
+        const glyph = Math.round(size * 0.5);
+        return (
+          <div
+            key={t.name}
+            className="hero-tools-row-item"
+            style={{
+              background: t.bg,
+              width: `${size}px`,
+              height: `${size}px`,
+              transform: `translateY(${ty}px) rotate(${rot}deg)`,
+              ["--glyph" as string]: `${glyph}px`,
+            }}
+            title={t.name}
+          >
+            <Icon />
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 export function HeroArtwork() {
   return (
     <div
