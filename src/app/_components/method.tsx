@@ -13,7 +13,7 @@ function ArtAssess() {
           <div className="v">32.4%</div>
         </div>
         <div className="pa-tile">
-          <div className="lbl">Blended CAC</div>
+          <div className="lbl">NCAC</div>
           <div className="v">$48</div>
         </div>
         <div className="pa-tile">
@@ -31,7 +31,7 @@ function ArtAssess() {
 
 function ArtDiagnose() {
   const rows: { label: string; pct: number; lead?: boolean }[] = [
-    { label: "Margin floor", pct: 88, lead: true },
+    { label: "Net margin", pct: 88, lead: true },
     { label: "Repeat <30d", pct: 62 },
     { label: "CAC headroom", pct: 44 },
     { label: "Variable cost", pct: 28 },
@@ -52,7 +52,7 @@ function ArtDiagnose() {
             <span className="pa-bar-track">
               <i style={{ width: `${r.pct}%` }} />
             </span>
-            {r.lead ? <em>Root</em> : <span className="pa-bar-pct">{r.pct}</span>}
+            {r.lead ? <em>Cause</em> : <span className="pa-bar-pct">{r.pct}</span>}
           </div>
         ))}
       </div>
@@ -64,7 +64,7 @@ function ArtDirect() {
   const actions: { n: string; text: string; lead?: boolean }[] = [
     { n: "01", text: "Cap blended CAC at $32", lead: true },
     { n: "02", text: "Lift 90-day repeat to 35%" },
-    { n: "03", text: "Margin floor to 38%" },
+    { n: "03", text: "Net margin to 38%" },
   ];
   return (
     <div className="pa-card" aria-hidden="true">
