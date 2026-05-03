@@ -39,10 +39,6 @@ export function Hero() {
   return (
     <section className="hero" id="top">
       <div className="container">
-        <div className="hero-marker">
-          <span className="hero-marker-rule" aria-hidden="true" />
-          <span className="hero-marker-text">The Profit Clarity Sprint</span>
-        </div>
         <div className="hero-grid">
           <div className="hero-text">
             <h1 className="hero-title">

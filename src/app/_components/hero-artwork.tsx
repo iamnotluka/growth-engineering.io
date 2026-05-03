@@ -37,9 +37,8 @@ export function HeroArtwork() {
     <div className="hero-art" role="figure" aria-label="A stylized P&L showing the bottleneck found by the sprint">
       <div className="hero-art-card">
         <header className="hero-art-head">
-          <span className="hero-art-fig">FIG. 02</span>
           <span className="hero-art-head-title">Unit Economics</span>
-          <span className="hero-art-head-meta">Sample · Q1</span>
+          <span className="hero-art-head-meta">Sample</span>
         </header>
 
         <div className="hero-art-rule" aria-hidden="true" />

@@ -10,16 +10,15 @@
 
 type Question = {
   text: string;
-  italic?: boolean;
 };
 
 const QUESTIONS: Question[] = [
   { text: "What is our real LTV?" },
-  { text: "What CAC can we actually afford?", italic: true },
+  { text: "What CAC can we actually afford?" },
   { text: "Can this business scale profitably?" },
-  { text: "Are our margins strong enough to grow?", italic: true },
+  { text: "Are our margins strong enough to grow?" },
   { text: "Will cash flow break if we push harder?" },
-  { text: "What is the next biggest lever?", italic: true },
+  { text: "What is the next biggest lever?" },
   { text: "What should we stop focusing on for now?" },
 ];
 
@@ -27,11 +26,6 @@ export function Questions() {
   return (
     <section className="questions" id="questions">
       <div className="container">
-        <div className="questions-marker">
-          <span className="questions-marker-rule" aria-hidden="true" />
-          <span className="questions-marker-text">Questions</span>
-        </div>
-
         <div className="questions-head">
           <h2 className="questions-title">
             You&rsquo;re already asking
@@ -45,12 +39,7 @@ export function Questions() {
 
         <ol className="questions-list">
           {QUESTIONS.map((q, i) => (
-            <li
-              key={q.text}
-              className={
-                "questions-item" + (q.italic ? " questions-item-italic" : "")
-              }
-            >
+            <li key={q.text} className="questions-item">
               <span className="questions-item-num" aria-hidden="true">
                 {String(i + 1).padStart(2, "0")}
               </span>

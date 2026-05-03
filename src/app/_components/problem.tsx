@@ -25,8 +25,6 @@ function ObservationPanel() {
       aria-label="The invisible tax: 5 to 10 percent of revenue typically hiding in the numbers"
     >
       <header className="problem-monitor-head">
-        <span className="problem-monitor-fig">Fig. 03</span>
-        <span className="problem-monitor-rule" aria-hidden="true" />
         <span className="problem-monitor-title">The cost of guessing</span>
       </header>
 
@@ -39,7 +37,6 @@ function ObservationPanel() {
         <span className="problem-monitor-stat-foot">
           of net margin, hiding in plain view
         </span>
-        <span className="problem-monitor-ornament" aria-hidden="true">§</span>
       </div>
 
       <div className="problem-monitor-scale">
@@ -75,11 +72,6 @@ export function Problem() {
   return (
     <section className="problem" id="problem">
       <div className="container">
-        <div className="problem-marker">
-          <span className="problem-marker-rule" aria-hidden="true" />
-          <span className="problem-marker-text">The Problem</span>
-        </div>
-
         <h2 className="problem-title">
           You know there is more growth.
           <span className="problem-title-emph">You just can&rsquo;t see where.</span>

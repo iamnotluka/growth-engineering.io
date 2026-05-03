@@ -1,63 +1,113 @@
 import type { ReactNode } from "react";
 
 type Tier = {
+  stage: string;
   revenue: string;
   suffix: string;
-  line: string;
-  body: ReactNode;
+  headline: ReactNode;
+  you: ReactNode;
+  role: ReactNode;
+  /** Highlights the middle card as the sweet-spot sale */
+  featured?: boolean;
 };
 
 const tiers: Tier[] = [
   {
+    stage: "01",
     revenue: "$1",
     suffix: "M",
-    line: "You need the playbook to reach $3–5M.",
-    body: (
+    headline: (
       <>
-        Roughly 20% margin, around $200k profit, inventory eating your cash, no
-        real team. <strong>We help you run the playbook</strong> - or mentor
-        your first hire to run it.
+        You need the playbook to reach <em>$3–5M</em>.
+      </>
+    ),
+    you: (
+      <>
+        Roughly 20% margin, around $200k profit, inventory eating your cash,
+        no real team yet.
+      </>
+    ),
+    role: (
+      <>
+        We help you run the playbook &mdash; or mentor your first hire to run
+        it for you.
       </>
     ),
   },
   {
+    stage: "02",
     revenue: "$2–4",
     suffix: "M",
-    line: "You know the priorities. You need the time and second brain.",
-    body: (
+    featured: true,
+    headline: (
       <>
-        You know roughly what to prioritise - you just don&rsquo;t have the
-        time, and the decisions are getting harder.{" "}
-        <strong>We join you to help make those decisions</strong>, because we
-        can see the whole picture.
+        You know the priorities. You need the <em>time</em> and{" "}
+        <em>second brain</em>.
+      </>
+    ),
+    you: (
+      <>
+        Real traction, real customer base. Decisions are getting harder and
+        the time to think is gone.
+      </>
+    ),
+    role: (
+      <>
+        We join you to help make the calls &mdash; because we can see the
+        whole picture, and you can&rsquo;t afford to get it wrong.
       </>
     ),
   },
   {
+    stage: "03",
     revenue: "$5",
     suffix: "M+",
-    line: "You have a team. You want the numbers to run it.",
-    body: (
+    headline: (
       <>
-        You have a team, traction, and real complexity. What&rsquo;s missing is
-        a clean quantified view. <strong>We support your team</strong> on
-        scaling the numbers, systemising the operation, and running it
-        properly.
+        You have a team. You want the numbers to <em>run it</em>.
+      </>
+    ),
+    you: (
+      <>
+        Real team, real traction, real complexity. What&rsquo;s missing is
+        one clean quantified view.
+      </>
+    ),
+    role: (
+      <>
+        We support your team on scaling the numbers, systemising the
+        operation, and running it properly.
       </>
     ),
   },
 ];
 
-function ApproachCard({ revenue, suffix, line, body }: Tier) {
+function ApproachCard({ revenue, suffix, headline, you, role, featured }: Tier) {
   return (
-    <div className="approach-card">
-      <div className="ac-rev">
-        {revenue}
-        <span className="suf">{suffix}</span>
+    <article className={"approach-card" + (featured ? " approach-card-featured" : "")}>
+      {featured && (
+        <span className="approach-card-pin" aria-label="Sweet-spot tier">
+          <span className="approach-card-pin-dot" aria-hidden="true" />
+          Sweet spot
+        </span>
+      )}
+
+      <div className="approach-card-rev">
+        <span className="approach-card-rev-num">{revenue}</span>
+        <span className="approach-card-rev-suf">{suffix}</span>
       </div>
-      <div className="ac-line">{line}</div>
-      <div className="ac-body">{body}</div>
-    </div>
+
+      <p className="approach-card-headline">{headline}</p>
+
+      <div className="approach-card-rule" aria-hidden="true" />
+
+      <dl className="approach-card-meta">
+        <dt className="approach-card-meta-lbl">You probably</dt>
+        <dd className="approach-card-meta-val">{you}</dd>
+        <dt className="approach-card-meta-lbl">Our role</dt>
+        <dd className="approach-card-meta-val approach-card-meta-val-emph">{role}</dd>
+      </dl>
+    </article>
   );
 }
 
@@ -66,20 +116,20 @@ export function Approach() {
     <section className="approach bg-paper-deep" id="approach">
       <div className="container">
         <div className="approach-head">
-          <h2 className="h-section">
+          <h2 className="approach-title">
             Real revenue. Real product.
-            <br />
-            <span className="ital">Unclear numbers.</span>
+            <span className="approach-title-emph">Unclear numbers.</span>
           </h2>
-          <p className="lead">
-            We&rsquo;ve worked with brands across the full revenue spectrum.
-            We know what each stage needs - and how to fit into yours so the
-            work actually pays off.
+          <p className="approach-sub">
+            We work with brands across the full revenue spectrum. We know what
+            each stage needs &mdash; and how to fit into yours so the work
+            actually pays off.
           </p>
         </div>
+
         <div className="approach-cards">
-          {tiers.map((t, i) => (
-            <ApproachCard key={i} {...t} />
+          {tiers.map((t) => (
+            <ApproachCard key={t.stage} {...t} />
           ))}
         </div>
       </div>
