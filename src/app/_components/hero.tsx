@@ -2,7 +2,7 @@ import { HeroArtwork } from "./hero-artwork";
 
 const stripItems = [
   "Assess · Diagnose · Direct",
-  "Brisbane + Auckland",
+  "Brisbane + Christchurch",
   "Brands $1M – $5M+",
   "Operator-led",
   "8 – 12 week sprints",
@@ -51,10 +51,10 @@ export function Hero() {
             </p>
             <div className="hero-actions">
               <a href="#contact" className="btn btn-acid">
-                Apply for the sprint
+                Apply For Sprint
               </a>
               <span className="hero-fineprint">
-                Brisbane, AU &nbsp;·&nbsp; Limited intake each quarter
+                Limited intake each quarter
               </span>
             </div>
           </div>

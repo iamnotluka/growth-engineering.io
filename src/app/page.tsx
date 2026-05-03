@@ -6,6 +6,7 @@ import { Hero } from "./_components/hero";
 import { Manifesto } from "./_components/manifesto";
 import { Method } from "./_components/method";
 import { Nav } from "./_components/nav";
+import { Partners } from "./_components/partners";
 import { Principles } from "./_components/principles";
 import { Problem } from "./_components/problem";
 import { Questions } from "./_components/questions";
@@ -87,6 +88,7 @@ export default function Home() {
       <Testimonials />
       <Team />
       <Contact />
+      <Partners />
       <SiteFooter />
     </>
   );
