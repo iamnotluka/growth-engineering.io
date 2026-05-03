@@ -127,7 +127,7 @@ export function Team() {
             photo="/luka.png"
             name="Luka"
             role="Analysis & systems"
-            bio="Software engineer at Amazon, and consultant to eCommerce brands at $5m+ revenue on modelling, measurement, and the systems behind scale. Based in Brisbane."
+            bio="Ex-Amazon software engineer and consultant to 7-8 figure businesses. Experienced in modelling, measurement and systemising businesses behind the scale."
             flag="🇦🇺"
             city="Brisbane, AU"
             linkedin="https://www.linkedin.com/in/luka-zoric/"

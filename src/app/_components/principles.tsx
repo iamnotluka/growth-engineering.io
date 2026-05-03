@@ -40,13 +40,13 @@ const items: Principle[] = [
   },
   {
     num: "04",
-    code: "Ownership",
+    code: "Deliverables",
     title: (
       <>
-        You keep<span className="ital"> the work.</span>
+        Every sprint,<span className="ital"> a deliverable in your hands.</span>
       </>
     ),
-    body: "Every model, spreadsheet, and playbook we build is yours, during the engagement and long after. No black boxes, no proprietary software.",
+    body: "We work in self-contained sprints. Each ends with a deliverable that's yours, no matter what comes next. No black boxes, no dependency, no being held hostage by the engagement.",
   },
 ];
 
@@ -66,8 +66,6 @@ export function Principles() {
               <div className="p-mark" aria-hidden="true" />
               <div className="p-stamp">
                 <span className="p-stamp-code">{p.code}</span>
-                <span className="p-stamp-sep">&middot;</span>
-                <span className="p-stamp-num">{p.num}</span>
               </div>
               <h3 className="p-title">{p.title}</h3>
               <p className="p-body">{p.body}</p>

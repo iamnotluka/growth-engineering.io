@@ -57,9 +57,6 @@ export function Hero() {
                 <a href="#contact" className="btn btn-acid">
                   Apply For Sprint
                 </a>
-                <span className="hero-fineprint">
-                  Advisory for ecommerce businesses
-                </span>
               </div>
             </div>
           </div>

@@ -118,8 +118,7 @@ export function Approach() {
       <div className="container">
         <div className="approach-head">
           <h2 className="approach-title">
-            Real revenue. Real product.
-            <span className="approach-title-emph">Unclear numbers.</span>
+            We partner with businesses with real revenue and real product.
           </h2>
           <p className="approach-sub">
             We work with brands across the full revenue spectrum. We know what

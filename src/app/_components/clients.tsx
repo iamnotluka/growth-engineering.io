@@ -37,7 +37,7 @@ export function Clients() {
   return (
     <section className="clients" id="clients" aria-label="Brands we have worked with">
       <div className="container">
-        <p className="clients-eyebrow">Trusted by eCommerce founders building real businesses</p>
+        <p className="clients-eyebrow">eCom advisory trusted by founders building real businesses</p>
         <div className="clients-row">
           {clients.map((c) => (
             <ClientMark key={c.name} {...c} />
