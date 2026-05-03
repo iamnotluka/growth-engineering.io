@@ -202,21 +202,36 @@ nav.site-nav {
   height: 72px;
 }
 .wordmark {
-  display: inline-flex; align-items: center; gap: 10px;
-  font-family: var(--display);
-  font-size: 13px;
-  font-weight: 300;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
   color: var(--ink);
-  white-space: nowrap;
-  flex-shrink: 0;
+  transition: opacity .2s ease, transform .2s ease;
 }
-.wordmark-logo {
-  display: block;
-  flex-shrink: 0;
-  border-radius: 5px;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.18),
-    0 2px 6px rgba(0, 0, 0, 0.25);
+.wordmark:hover {
+  opacity: 0.78;
+  transform: translateY(-1px);
+}
+
+/* GE brand lockup — letters in `currentColor`, dot fixed acid green. */
+.ge-logo {
+  display: inline-block;
+  font-family: var(--display);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1;
+  color: inherit;
+  white-space: nowrap;
+  font-style: normal;
+}
+.ge-logo-dot {
+  display: inline-block;
+  width: 0.22em;
+  height: 0.22em;
+  border-radius: 50%;
+  background: var(--acid);
+  margin-left: 0.06em;
+  vertical-align: baseline;
 }
 
 .nav-links {
@@ -1487,6 +1502,11 @@ section { padding: clamp(72px, 8vw, 120px) 0; }
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
     var(--display);
 }
+.team-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
 .team-link {
   display: inline-flex;
   align-items: center;
@@ -1498,6 +1518,11 @@ section { padding: clamp(72px, 8vw, 120px) 0; }
 }
 .team-link:hover {
   color: var(--acid-deep);
+}
+.team-links-sep {
+  color: var(--ink-faint);
+  font-weight: 400;
+  user-select: none;
 }
 
 @media (max-width: 540px) {
@@ -1913,11 +1938,12 @@ footer.site-footer {
 .footer-brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   color: var(--on-dark);
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: -0.005em;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.footer-brand:hover {
+  opacity: 0.78;
+  transform: translateY(-1px);
 }
 .footer-totop {
   display: inline-flex;

@@ -11,9 +11,8 @@ export function Nav() {
   return (
     <nav className="site-nav">
       <div className="container nav-inner">
-        <a href="#top" className="wordmark">
-          <Logo size={22} className="wordmark-logo" />
-          growth-engineering.io
+        <a href="#top" className="wordmark" aria-label="growth-engineering.io home">
+          <Logo size={28} />
         </a>
         <ul className="nav-links">
           {links.map((l) => (

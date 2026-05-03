@@ -8,6 +8,8 @@ type TeamCardProps = {
   flag: string;
   city: string;
   linkedin: string;
+  site: string;
+  siteLabel: string;
 };
 
 function LinkedInIcon() {
@@ -24,17 +26,42 @@ function LinkedInIcon() {
   );
 }
 
-function TeamCard({ photo, name, role, bio, flag, city, linkedin }: TeamCardProps) {
+function SiteIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="13"
+      height="13"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18" />
+      <path d="M12 3a14 14 0 0 1 0 18" />
+      <path d="M12 3a14 14 0 0 0 0 18" />
+    </svg>
+  );
+}
+
+function TeamCard({
+  photo,
+  name,
+  role,
+  bio,
+  flag,
+  city,
+  linkedin,
+  site,
+  siteLabel,
+}: TeamCardProps) {
   return (
     <div className="team-card">
       <div className="team-photo">
-        <Image
-          src={photo}
-          alt={name}
-          width={120}
-          height={120}
-          priority
-        />
+        <Image src={photo} alt={name} width={120} height={120} priority />
       </div>
       <div className="team-body">
         <div className="team-name">{name}</div>
@@ -47,16 +74,31 @@ function TeamCard({ photo, name, role, bio, flag, city, linkedin }: TeamCardProp
             </span>
             {city}
           </span>
-          <a
-            className="team-link"
-            href={linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`${name} on LinkedIn`}
-          >
-            <LinkedInIcon />
-            <span>LinkedIn</span>
-          </a>
+          <div className="team-links">
+            <a
+              className="team-link"
+              href={site}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${name}'s personal site`}
+            >
+              <SiteIcon />
+              <span>{siteLabel}</span>
+            </a>
+            <span className="team-links-sep" aria-hidden="true">
+              ·
+            </span>
+            <a
+              className="team-link"
+              href={linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${name} on LinkedIn`}
+            >
+              <LinkedInIcon />
+              <span>LinkedIn</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -89,6 +131,8 @@ export function Team() {
             flag="🇦🇺"
             city="Brisbane, AU"
             linkedin="https://www.linkedin.com/in/luka-zoric/"
+            site="https://www.zoricl.io/"
+            siteLabel="zoricl.io"
           />
           <TeamCard
             photo="/james.jpeg"
@@ -96,8 +140,10 @@ export function Team() {
             role="Co-founder · Operations & Marketing"
             bio="CMO at an eCommerce brand doing $1m per month. Brings the operator's view — what actually moves in a DTC business, and what doesn't, once the theory meets the P&L."
             flag="🇳🇿"
-            city="Auckland, NZ"
+            city="Christchurch, NZ"
             linkedin="https://www.linkedin.com/in/jamesforsythnz/"
+            site="https://www.jamesroux.co/"
+            siteLabel="jamesroux.co"
           />
         </div>
       </div>

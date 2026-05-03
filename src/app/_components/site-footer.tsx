@@ -15,9 +15,12 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="container">
         <div className="footer-top">
-          <a href="#top" className="footer-brand">
-            <Logo size={20} />
-            <span>growth-engineering.io</span>
+          <a
+            href="#top"
+            className="footer-brand"
+            aria-label="growth-engineering.io home"
+          >
+            <Logo size={26} title="growth-engineering.io" />
           </a>
           <a href="#top" className="footer-totop">
             <span>Back to top</span>
@@ -81,7 +84,7 @@ export function SiteFooter() {
                 <span className="footer-flag" aria-hidden="true">
                   🇳🇿
                 </span>
-                Auckland, NZ
+                Christchurch, NZ
               </li>
             </ul>
           </div>
