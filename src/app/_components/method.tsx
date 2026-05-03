@@ -123,7 +123,6 @@ export function Method() {
           <div>
             <h2 className="h-section on-dark">
               Three phases.
-              <br />
               <span className="ital">One clear answer.</span>
             </h2>
           </div>

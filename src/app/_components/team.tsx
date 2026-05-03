@@ -27,7 +27,6 @@ export function Team() {
           <div>
             <h2 className="h-section">
               Who you are
-              <br />
               <span className="ital">working with.</span>
             </h2>
           </div>
