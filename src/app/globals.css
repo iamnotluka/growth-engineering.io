@@ -398,6 +398,7 @@ nav.site-nav {
   .hero-artwork { display: none; }
   .hero-actions { flex-direction: column; align-items: stretch; gap: 16px; }
   .hero-actions .btn { width: 100%; justify-content: center; }
+  .hero-grid { margin-bottom: 0; }
 }
 
 /* ── Annotated P&L card (hero artwork) ─────────────────────── */
