@@ -146,7 +146,7 @@ export function Method() {
             body={
               <>
                 We pull the data and build a true picture of how the business
-                works today &mdash;{" "}
+                works today,{" "}
                 <strong>
                   revenue structure, variable and fixed costs, contribution
                   margin, AOV, repeat behaviour, LTV, CAC, and cash.
@@ -171,8 +171,8 @@ export function Method() {
                 <strong>
                   find what is actually holding back profitable growth
                 </strong>
-                {" "}&mdash; margins, repeat, CAC, cash, or structural issues
-                hiding in the data. Cause, not symptom.
+                , margins, repeat, CAC, cash, or structural issues hiding in
+                the data. Cause, not symptom.
               </>
             }
             outcome="You know exactly what is limiting the business, and why - backed by evidence from your own numbers."
@@ -188,7 +188,7 @@ export function Method() {
             }
             body={
               <>
-                We translate the diagnosis into specific actions &mdash;{" "}
+                We translate the diagnosis into specific actions,{" "}
                 <strong>
                   which levers to pull, what success looks like in the numbers,
                   and what it will take to execute.

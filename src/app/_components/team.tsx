@@ -126,7 +126,7 @@ export function Team() {
           <TeamCard
             photo="/luka.png"
             name="Luka"
-            role="Co-founder · Analysis & systems"
+            role="Analysis & systems"
             bio="Software engineer at Amazon, and consultant to eCommerce brands at $5m+ revenue on modelling, measurement, and the systems behind scale. Based in Brisbane."
             flag="🇦🇺"
             city="Brisbane, AU"
@@ -137,8 +137,8 @@ export function Team() {
           <TeamCard
             photo="/james.jpeg"
             name="James"
-            role="Co-founder · Operations & Marketing"
-            bio="CMO at an eCommerce brand doing $1m per month. Brings the operator's view — what actually moves in a DTC business, and what doesn't, once the theory meets the P&L."
+            role="Operations & Marketing"
+            bio="CMO at an eCommerce brand doing $1m per month. Brings the operator's view, what actually moves in a DTC business, and what doesn't, once the theory meets the P&L."
             flag="🇳🇿"
             city="Christchurch, NZ"
             linkedin="https://www.linkedin.com/in/jamesforsythnz/"

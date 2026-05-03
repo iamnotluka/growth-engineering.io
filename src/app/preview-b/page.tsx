@@ -80,7 +80,7 @@ export default function PreviewB() {
               <div className="pb-method-name">Assess</div>
               <div className="pb-method-body">
                 Pull the data and build a true picture of how the business actually
-                works today &mdash; revenue structure, variable and fixed costs,
+                works today, revenue structure, variable and fixed costs,
                 contribution margin, AOV, repeat behaviour, LTV, CAC, and cash.
                 Everything in one place, properly modelled.
               </div>
@@ -91,7 +91,7 @@ export default function PreviewB() {
               <div className="pb-method-name">Diagnose</div>
               <div className="pb-method-body">
                 Analyse what the assess phase revealed. Find what is actually
-                holding back profitable growth &mdash; margins, repeat, CAC, cash,
+                holding back profitable growth, margins, repeat, CAC, cash,
                 or structural issues hiding in the data. Cause, not symptom.
               </div>
               <div className="pb-method-out">Bottleneck identified, evidenced</div>
@@ -100,7 +100,7 @@ export default function PreviewB() {
               <div className="pb-method-phase">D</div>
               <div className="pb-method-name">Direct</div>
               <div className="pb-method-body">
-                Translate the diagnosis into specific actions &mdash; which levers
+                Translate the diagnosis into specific actions, which levers
                 to pull, what success looks like in the numbers, what it will take
                 to execute. Then stay with you through the work.
               </div>
@@ -167,7 +167,7 @@ export default function PreviewB() {
               </tr>
               <tr>
                 <td className="pb-tbl-metric">New customers acquired</td>
-                <td className="pb-tbl-num pb-tbl-from">—</td>
+                <td className="pb-tbl-num pb-tbl-from">-</td>
                 <td className="pb-tbl-arrow" aria-hidden="true">→</td>
                 <td className="pb-tbl-num pb-tbl-to">60,000+</td>
                 <td className="pb-tbl-num pb-tbl-delta-val">aMER 2.0+</td>

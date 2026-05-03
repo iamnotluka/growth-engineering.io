@@ -48,8 +48,8 @@ export function Hero() {
             <p className="hero-sub">
               We read the numbers behind your business, find what&rsquo;s
               limiting profitable scale, and hand you a plan that actually
-              moves them. The Profit Clarity Sprint &mdash; 12 weeks, built
-              for ecommerce brands.
+              moves them. The Profit Clarity Sprint, 12 weeks, built for
+              ecommerce brands.
             </p>
             <div className="hero-actions">
               <a href="#contact" className="btn btn-acid">

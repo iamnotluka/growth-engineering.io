@@ -9,7 +9,7 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     quote:
-      "In one sprint they showed us where margin was actually leaking — things we had been arguing about for a year. The plan that came out of it changed how we ran the next quarter.",
+      "In one sprint they showed us where margin was actually leaking, things we had been arguing about for a year. The plan that came out of it changed how we ran the next quarter.",
     name: "[Founder Name]",
     role: "Founder & CEO",
     company: "[Company]",

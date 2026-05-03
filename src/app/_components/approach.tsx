@@ -29,8 +29,8 @@ const tiers: Tier[] = [
     ),
     role: (
       <>
-        We help you run the playbook &mdash; or mentor your first hire to run
-        it for you.
+        We help you run the playbook, or mentor your first hire to run it for
+        you.
       </>
     ),
   },
@@ -38,7 +38,6 @@ const tiers: Tier[] = [
     stage: "02",
     revenue: "$2–4",
     suffix: "M",
-    featured: true,
     headline: (
       <>
         You know the priorities. You need the <em>time</em> and{" "}
@@ -53,8 +52,8 @@ const tiers: Tier[] = [
     ),
     role: (
       <>
-        We join you to help make the calls &mdash; because we can see the
-        whole picture, and you can&rsquo;t afford to get it wrong.
+        We join you to help make the calls, because we can see the whole
+        picture, and you can&rsquo;t afford to get it wrong.
       </>
     ),
   },
@@ -102,11 +101,13 @@ function ApproachCard({ revenue, suffix, headline, you, role, featured }: Tier) 
       <div className="approach-card-rule" aria-hidden="true" />
 
       <dl className="approach-card-meta">
-        <dt className="approach-card-meta-lbl">You probably</dt>
         <dd className="approach-card-meta-val">{you}</dd>
-        <dt className="approach-card-meta-lbl">Our role</dt>
-        <dd className="approach-card-meta-val approach-card-meta-val-emph">{role}</dd>
       </dl>
+
+      <div className="approach-card-role">
+        <div className="approach-card-role-lbl">Our role</div>
+        <div className="approach-card-role-txt">{role}</div>
+      </div>
     </article>
   );
 }
@@ -122,8 +123,8 @@ export function Approach() {
           </h2>
           <p className="approach-sub">
             We work with brands across the full revenue spectrum. We know what
-            each stage needs &mdash; and how to fit into yours so the work
-            actually pays off.
+            each stage needs, and how to fit into yours so the work actually
+            pays off.
           </p>
         </div>
 

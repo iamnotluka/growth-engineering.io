@@ -60,7 +60,7 @@ export function Contact() {
             <p className="contact-pitch">
               The <strong>Profit Clarity Sprint</strong>
               {" "}is a fixed-fee diagnostic for eCommerce founders doing
-              $1M–$5M+. Tell us a bit about your business — we&rsquo;ll come
+              $1M–$5M+. Tell us a bit about your business, we&rsquo;ll come
               back within one business day.
             </p>
 
@@ -191,9 +191,7 @@ export function Contact() {
                   disabled={pending || phoneInvalid}
                 >
                   <span>
-                    {pending
-                      ? "Sending…"
-                      : "Apply for the Profit Clarity Sprint"}
+                    {pending ? "Sending…" : "Submit"}
                   </span>
                   {!pending ? (
                     <span className="arrow" aria-hidden="true">

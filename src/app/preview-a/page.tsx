@@ -49,14 +49,14 @@ export default function PreviewA() {
         <div className="pa-pullquote-inner">
           <blockquote className="pa-quote">
             <span className="pa-quote-dim">
-              Most advisors sell you a product&mdash;a framework, a course, a system
+              Most advisors sell you a product, a framework, a course, a system
               packaged to work for everyone.
             </span>{" "}
             You are past that. Your problem is specific to <em>your</em> business.
             You need someone who goes back to first principles and models it on the
             evidence.
           </blockquote>
-          <div className="pa-quote-attr">— from The Profit Clarity Sprint</div>
+          <div className="pa-quote-attr">- from The Profit Clarity Sprint</div>
         </div>
       </section>
 

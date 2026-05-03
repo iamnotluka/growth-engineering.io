@@ -81,8 +81,8 @@ export function Problem() {
           <div className="problem-prose">
             <p>
               Revenue is moving. The team is working. But profit isn&rsquo;t
-              following. Cash isn&rsquo;t accumulating. CAC looks fine &mdash;
-              but margin keeps eroding. Each metric tells its own story.
+              following. Cash isn&rsquo;t accumulating. CAC looks fine, but
+              margin keeps eroding. Each metric tells its own story.
             </p>
 
             <p>

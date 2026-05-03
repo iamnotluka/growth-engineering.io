@@ -35,7 +35,7 @@ const CASES: Case[] = [
       { label: "Profit dollars", value: "$29k → $50k/mo" },
       { label: "Margin held", value: "9%+" },
     ],
-    closing: "Profit grew with revenue — not behind it.",
+    closing: "Profit grew with revenue, not behind it.",
   },
   {
     index: "03",
@@ -51,7 +51,7 @@ const CASES: Case[] = [
   {
     index: "04",
     brand: "FITAZ",
-    hook: "Started end of Q2. The first full quarter was an all-time record — on revenue and profit, with less ad spend.",
+    hook: "Started end of Q2. The first full quarter was an all-time record, on revenue and profit, with less ad spend.",
     hero: { value: "149%", caption: "Of profit target, Q3" },
     metrics: [
       { label: "Ad spend / Revenue", value: "−20% / +15%" },

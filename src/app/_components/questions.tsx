@@ -32,7 +32,7 @@ export function Questions() {
             <span className="questions-title-emph">the right questions.</span>
           </h2>
           <p className="questions-sub">
-            We help you answer them — with evidence pulled from your own
+            We help you answer them, with evidence pulled from your own
             numbers, not generic benchmarks or opinion.
           </p>
         </div>

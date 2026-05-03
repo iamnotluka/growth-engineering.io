@@ -84,9 +84,9 @@ a { color: inherit; text-decoration: none; }
 .h-section {
   font-family: var(--display);
   font-weight: 700;
-  font-size: clamp(44px, 5.5vw, 88px);
-  line-height: 1.0;
-  letter-spacing: -0.035em;
+  font-size: 38px;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
   margin: 0;
   color: var(--ink);
 }
@@ -133,9 +133,10 @@ a { color: inherit; text-decoration: none; }
   padding: 13px 22px;
   font-family: var(--display);
   font-size: 14.5px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.005em;
-  border-radius: 6px;
+  text-transform: uppercase;
+  border-radius: 0;
   background: var(--ink);
   color: var(--paper);
   border: 1px solid var(--ink);
@@ -251,9 +252,10 @@ nav.site-nav {
   background: var(--ink);
   color: var(--paper);
   border: 1px solid var(--ink);
-  border-radius: 6px;
+  border-radius: 0;
   font-size: 13.5px;
-  font-weight: 500;
+  font-weight: 600;
+  text-transform: uppercase;
   transition: background .2s ease, transform .2s ease;
 }
 .nav-cta:hover {
@@ -299,20 +301,20 @@ nav.site-nav {
 .hero-title {
   font-family: var(--display);
   font-weight: 700;
-  font-size: clamp(48px, 6vw, 96px);
-  line-height: 1.0;
-  letter-spacing: -0.035em;
+  font-size: 38px;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
   margin: 0 0 40px 0;
   color: var(--ink);
   max-width: 1100px;
 }
 .hero-title-emph {
   display: block;
-  font-family: var(--font-instrument-serif), Georgia, "Times New Roman", serif;
+  font-family: var(--display);
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   color: var(--ink-muted);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.03em;
   margin-top: 0.06em;
 }
 
@@ -333,10 +335,11 @@ nav.site-nav {
   align-items: center;
 }
 .hero-fineprint {
-  font-family: var(--font-instrument-serif), Georgia, "Times New Roman", serif;
-  font-size: 15px;
-  font-style: italic;
-  font-weight: 400;
+  font-family: var(--display);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--ink-faint);
 }
 
@@ -368,6 +371,9 @@ nav.site-nav {
 }
 @media (max-width: 640px) {
   .hero-artwork { display: none; }
+  .hero-actions { flex-direction: column; align-items: stretch; gap: 16px; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+  .hero-fineprint { text-align: center; }
 }
 
 /* ── Annotated P&L card (hero artwork) ─────────────────────── */
@@ -381,7 +387,7 @@ nav.site-nav {
 .hero-art-card {
   background: var(--paper-card);
   border: 1px solid var(--rule-strong);
-  border-radius: 10px;
+  border-radius: 0;
   padding: 22px 26px 20px;
   box-shadow: 0 1px 2px rgba(10, 9, 8, 0.04), 0 12px 32px rgba(10, 9, 8, 0.06);
   position: relative;
@@ -607,6 +613,9 @@ nav.site-nav {
 @keyframes scrollLeft {
   to { transform: translateX(-50%); }
 }
+@media (max-width: 640px) {
+  .hero-strip { display: none; }
+}
 
 /* ============================================================
    Section spacing
@@ -646,9 +655,9 @@ section { padding: clamp(72px, 8vw, 120px) 0; }
 .problem-title {
   font-family: var(--display);
   font-weight: 700;
-  font-size: clamp(44px, 5.5vw, 88px);
-  line-height: 1.0;
-  letter-spacing: -0.035em;
+  font-size: 38px;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
   margin: 0 0 72px 0;
   color: var(--ink);
   max-width: 1080px;
@@ -906,9 +915,9 @@ section { padding: clamp(72px, 8vw, 120px) 0; }
 .approach-title {
   font-family: var(--display);
   font-weight: 700;
-  font-size: clamp(44px, 5.5vw, 88px);
-  line-height: 1.0;
-  letter-spacing: -0.035em;
+  font-size: 38px;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
   margin: 0;
   color: var(--ink);
 }
@@ -941,7 +950,7 @@ section { padding: clamp(72px, 8vw, 120px) 0; }
 
 .approach-card {
   background: var(--paper-card);
-  border-radius: 10px;
+  border-radius: 0;
   padding: 28px 28px 32px;
   display: flex; flex-direction: column;
   border: 1px solid var(--rule);
@@ -1078,7 +1087,29 @@ section { padding: clamp(72px, 8vw, 120px) 0; }
 .approach-card-meta-val:last-child { margin-bottom: 0; }
 .approach-card-meta-val-emph {
   color: var(--ink);
-  font-weight: 500;
+  font-weight: 600;
+}
+
+/* "Our role" callout — mirrors the .pc-out outcome card on dark sections */
+.approach-card-role {
+  margin-top: 18px;
+  padding: 14px 16px;
+  background: rgba(149, 191, 71, 0.08);
+  border-left: 2px solid var(--acid);
+}
+.approach-card-role-lbl {
+  font-family: var(--display);
+  font-size: 10px;
+  color: var(--ink-faint);
+  margin-bottom: 6px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.approach-card-role-txt {
+  font-family: var(--display);
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ink);
 }
 
 /* ============================================================
@@ -1146,7 +1177,7 @@ section { padding: clamp(72px, 8vw, 120px) 0; }
   background:
     linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0) 50%),
     rgba(255,255,255,0.03);
-  border-radius: 14px;
+  border-radius: 0;
   padding: 32px;
   display: flex; flex-direction: column;
   min-height: 460px;
@@ -1213,7 +1244,7 @@ section { padding: clamp(72px, 8vw, 120px) 0; }
   margin-top: 28px;
   padding: 14px 16px;
   background: rgba(149, 191, 71, 0.06);
-  border-radius: 8px;
+  border-radius: 0;
   border-left: 2px solid var(--acid);
 }
 .pc-out-lbl {
@@ -1236,7 +1267,7 @@ section { padding: clamp(72px, 8vw, 120px) 0; }
     linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0) 60%),
     rgba(0,0,0,0.35);
   border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 10px;
+  border-radius: 0;
   padding: 14px 14px 12px;
   min-height: 188px;
 }
@@ -1454,7 +1485,7 @@ section { padding: clamp(72px, 8vw, 120px) 0; }
 
 .team-card {
   background: var(--paper-card);
-  border-radius: 14px;
+  border-radius: 0;
   padding: 36px;
   display: grid;
   grid-template-columns: 120px 1fr;
@@ -1594,17 +1625,6 @@ section { padding: clamp(72px, 8vw, 120px) 0; }
 
 .contact-left { max-width: 560px; }
 
-/* Contact uses a tighter headline scale than other sections — the form is
-   the protagonist here, not the headline. */
-.contact .h-section {
-  font-size: clamp(36px, 4.4vw, 60px);
-  line-height: 1.05;
-  letter-spacing: -0.025em;
-}
-.contact .h-section .ital {
-  letter-spacing: -0.02em;
-}
-
 .contact-pitch {
   font-size: 17px;
   line-height: 1.55;
@@ -1681,10 +1701,11 @@ section { padding: clamp(72px, 8vw, 120px) 0; }
   background: var(--ink);
   color: var(--paper);
   padding: 18px 24px;
-  border-radius: 10px;
+  border-radius: 0;
   font-family: var(--display);
-  font-size: 15.5px; font-weight: 500;
+  font-size: 15.5px; font-weight: 600;
   letter-spacing: -0.005em;
+  text-transform: uppercase;
   border: 1px solid var(--ink);
   cursor: pointer;
   transition: background .2s ease, transform .2s ease, box-shadow .2s ease;
@@ -1718,7 +1739,7 @@ section { padding: clamp(72px, 8vw, 120px) 0; }
   width: 100%;
   background: var(--paper-card);
   border: 1px solid var(--rule);
-  border-radius: 16px;
+  border-radius: 0;
   padding: 32px;
   box-shadow: 0 8px 28px rgba(10, 9, 8, 0.06);
 }
@@ -1737,7 +1758,7 @@ section { padding: clamp(72px, 8vw, 120px) 0; }
   -webkit-appearance: none;
   background: var(--paper-card);
   border: 1px solid var(--rule);
-  border-radius: 8px;
+  border-radius: 0;
   padding: 14px 18px;
   color: var(--ink);
   font-family: var(--display);
@@ -1867,7 +1888,7 @@ section { padding: clamp(72px, 8vw, 120px) 0; }
     linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0) 60%),
     var(--paper-card);
   border: 1px solid var(--rule);
-  border-radius: 12px;
+  border-radius: 0;
   margin-bottom: 28px;
 }
 .contact-success-title {
@@ -2101,7 +2122,7 @@ footer.site-footer {
 .ty-overlay.open { opacity: 1; pointer-events: all; }
 .ty-card {
   background: var(--paper-card);
-  border-radius: 12px; padding: 40px 48px;
+  border-radius: 0; padding: 40px 48px;
   max-width: 460px; text-align: center;
   transform: translateY(12px);
   transition: transform .5s cubic-bezier(0.16, 1, 0.3, 1);
@@ -2171,9 +2192,9 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .questions-title {
   font-family: var(--display);
   font-weight: 700;
-  font-size: clamp(44px, 5.5vw, 88px);
-  line-height: 1.0;
-  letter-spacing: -0.035em;
+  font-size: 38px;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
   margin: 0;
   color: var(--ink);
 }
@@ -2221,7 +2242,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   margin: 0 -12px;
 }
 .questions-item-num {
-  font-family: var(--mono);
+  font-family: var(--display);
   font-size: 12px;
   letter-spacing: 0.08em;
   color: var(--ink-faint);
@@ -2253,12 +2274,11 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   background: var(--acid-deep);
 }
 .questions-foot-text {
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-family: var(--display);
+  font-size: clamp(15px, 1.1vw, 17px);
+  line-height: 1.55;
   color: var(--ink);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* ============================================================
@@ -2336,9 +2356,9 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 .case-studies-title {
   font-family: var(--display);
   font-weight: 700;
-  font-size: clamp(44px, 5.5vw, 88px);
-  line-height: 1.0;
-  letter-spacing: -0.035em;
+  font-size: 38px;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
   margin: 0;
   color: var(--ink);
 }
@@ -2579,7 +2599,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 .testimonial-card {
   background: var(--paper-card);
-  border-radius: 14px;
+  border-radius: 0;
   padding: 36px 32px 28px;
   margin: 0;
   border: 1px solid var(--rule);
@@ -2658,4 +2678,20 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   font-size: 12px;
   letter-spacing: 0.02em;
   color: var(--ink-muted);
+}
+
+/* ============================================================
+   Mobile body-text consistency — pin prose copy to 15px on phones
+   ============================================================ */
+@media (max-width: 640px) {
+  .hero-sub,
+  .problem-prose p,
+  .approach-sub,
+  .questions-sub,
+  .case-studies-sub,
+  .case-cell-hook,
+  .contact-pitch,
+  .p-body {
+    font-size: 15px;
+  }
 }

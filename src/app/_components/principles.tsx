@@ -36,7 +36,7 @@ const items: Principle[] = [
         Clarity,<span className="ital"> direction, confidence.</span>
       </>
     ),
-    body: "Founders do not need more information. You need clarity, direction, and a second thought on the hard calls — so you can move quickly instead of second-guessing.",
+    body: "Founders do not need more information. You need clarity, direction, and a second thought on the hard calls, so you can move quickly instead of second-guessing.",
   },
   {
     num: "04",
