@@ -1,4 +1,6 @@
 import { Approach } from "./_components/approach";
+import { CaseStudies } from "./_components/case-studies";
+import { Clients } from "./_components/clients";
 import { Contact } from "./_components/contact";
 import { Hero } from "./_components/hero";
 import { Manifesto } from "./_components/manifesto";
@@ -8,6 +10,7 @@ import { Principles } from "./_components/principles";
 import { Problem } from "./_components/problem";
 import { SiteFooter } from "./_components/site-footer";
 import { Team } from "./_components/team";
+import { Testimonials } from "./_components/testimonials";
 
 const SITE_URL = "https://growth-engineering.io";
 
@@ -72,11 +75,14 @@ export default function Home() {
       />
       <Nav />
       <Hero />
+      <Clients />
       <Problem />
       <Approach />
+      <CaseStudies />
       <Manifesto />
       <Method />
       <Principles />
+      <Testimonials />
       <Team />
       <Contact />
       <SiteFooter />
