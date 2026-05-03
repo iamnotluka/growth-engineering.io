@@ -8,6 +8,7 @@ import { Method } from "./_components/method";
 import { Nav } from "./_components/nav";
 import { Principles } from "./_components/principles";
 import { Problem } from "./_components/problem";
+import { Questions } from "./_components/questions";
 import { SiteFooter } from "./_components/site-footer";
 import { Team } from "./_components/team";
 import { Testimonials } from "./_components/testimonials";
@@ -77,6 +78,7 @@ export default function Home() {
       <Hero />
       <Clients />
       <Problem />
+      <Questions />
       <Approach />
       <CaseStudies />
       <Manifesto />

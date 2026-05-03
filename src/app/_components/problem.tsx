@@ -1,80 +1,73 @@
 /**
- * Problem section — visually distinct from the hero:
- *  - Title spans full container width above the content (chapter-opener, not headline)
- *  - Body + chart sit in a sub-grid below, body wider than chart
- *  - Chart is an inline figure (hairline rules top/bottom, no card panel)
+ * Problem section — narrative essay on the left, dominant Observation panel on the right.
+ *  - Title spans full width above
+ *  - Below: 2-col body. Left = prose, Right = pull-stat + micro-vitals
+ *  - Right column is the visual centerpiece; prose narrates around it
  */
 
-function ProblemArt() {
+/**
+ * Scale calculator — shows the math across the offer's target brand-size range.
+ * The math is the defence: a prospect can verify by doing it on their own revenue.
+ * Each row's `weight` (0..1) drives the width of a small horizontal range bar.
+ */
+type ScaleRow = { size: string; range: string; weight: number };
+
+const SCALE: ScaleRow[] = [
+  { size: "On a $1M brand", range: "$50 – 100K",  weight: 0.20 },
+  { size: "On a $3M brand", range: "$150 – 300K", weight: 0.55 },
+  { size: "On a $5M brand", range: "$250 – 500K", weight: 1.00 },
+];
+
+function ObservationPanel() {
   return (
-    <figure
-      className="problem-art"
-      aria-label="Twelve months: revenue climbing while profit stays flat"
+    <aside
+      className="problem-monitor"
+      aria-label="The invisible tax: 5 to 10 percent of revenue typically hiding in the numbers"
     >
-      <figcaption className="problem-art-cap">
-        <span className="problem-art-cap-fig">Fig. 03</span>
-        <span className="problem-art-cap-rule" aria-hidden="true" />
-        <span className="problem-art-cap-title">Revenue vs. profit · 12 months · indexed</span>
-      </figcaption>
+      <header className="problem-monitor-head">
+        <span className="problem-monitor-fig">Fig. 03</span>
+        <span className="problem-monitor-rule" aria-hidden="true" />
+        <span className="problem-monitor-title">The cost of guessing</span>
+      </header>
 
-      <div className="problem-art-frame" aria-hidden="true">
-        <svg
-          viewBox="0 0 480 220"
-          preserveAspectRatio="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          {/* Horizontal rules — solid baseline at 100, hairlines above/below */}
-          <line x1="0" y1="40"  x2="480" y2="40"  stroke="rgba(10,9,8,0.06)" strokeDasharray="2 4" />
-          <line x1="0" y1="100" x2="480" y2="100" stroke="rgba(10,9,8,0.16)" />
-          <line x1="0" y1="160" x2="480" y2="160" stroke="rgba(10,9,8,0.06)" strokeDasharray="2 4" />
-
-          {/* The gap — soft acid-green fill between curves */}
-          <path
-            d="M 0 130 C 80 124, 160 116, 240 100, 320 80, 400 56, 480 30 L 480 138 C 400 138, 320 137, 240 136, 160 134, 80 132, 0 130 Z"
-            fill="rgba(122, 179, 66, 0.13)"
-          />
-
-          {/* Profit line — dashed muted */}
-          <path
-            d="M 0 130 C 80 132, 160 134, 240 136, 320 137, 400 138, 480 138"
-            stroke="rgba(10, 9, 8, 0.42)"
-            strokeWidth="1.6"
-            strokeDasharray="3 4"
-            fill="none"
-            strokeLinecap="round"
-          />
-
-          {/* Revenue line — solid ink */}
-          <path
-            d="M 0 130 C 80 124, 160 116, 240 100, 320 80, 400 56, 480 30"
-            stroke="#0a0908"
-            strokeWidth="2.2"
-            fill="none"
-            strokeLinecap="round"
-          />
-
-          {/* Endpoint markers */}
-          <circle cx="480" cy="138" r="3.5" fill="rgba(10, 9, 8, 0.5)" />
-          <circle cx="480" cy="30"  r="6"   fill="none" stroke="rgba(10,9,8,0.18)" strokeWidth="1" />
-          <circle cx="480" cy="30"  r="4"   fill="#0a0908" />
-
-          {/* Inline series labels — sitting on the chart, not in a footer */}
-          <text x="6" y="22" fontFamily="var(--font-plex-mono), ui-monospace, monospace" fontSize="10" fill="#0a0908" letterSpacing="1.2" fontWeight="600">REVENUE</text>
-          <text x="84" y="22" fontFamily="var(--font-plex-mono), ui-monospace, monospace" fontSize="10" fill="#0a0908" letterSpacing="1" fontWeight="600">+24%</text>
-          <text x="6" y="178" fontFamily="var(--font-plex-mono), ui-monospace, monospace" fontSize="10" fill="rgba(10,9,8,0.55)" letterSpacing="1.2" fontWeight="500">PROFIT</text>
-          <text x="78" y="178" fontFamily="var(--font-plex-mono), ui-monospace, monospace" fontSize="10" fill="rgba(10,9,8,0.55)" letterSpacing="1" fontWeight="500">−2%</text>
-
-          {/* The gap callout — vertical hairline at midpoint */}
-          <line x1="240" y1="118" x2="240" y2="200" stroke="#5a8c2a" strokeWidth="0.7" strokeDasharray="2 3" />
-          <text x="248" y="200" fontFamily="var(--font-plex-mono), ui-monospace, monospace" fontSize="10" fill="#5a8c2a" letterSpacing="1.4" fontWeight="600">THE GAP · 26pp</text>
-
-          {/* X-axis labels */}
-          <text x="0"   y="216" fontFamily="var(--font-plex-mono), ui-monospace, monospace" fontSize="9" fill="rgba(10,9,8,0.45)" letterSpacing="1.2" fontWeight="500">JAN</text>
-          <text x="240" y="216" textAnchor="middle" fontFamily="var(--font-plex-mono), ui-monospace, monospace" fontSize="9" fill="rgba(10,9,8,0.45)" letterSpacing="1.2" fontWeight="500">JUL</text>
-          <text x="480" y="216" textAnchor="end" fontFamily="var(--font-plex-mono), ui-monospace, monospace" fontSize="9" fill="rgba(10,9,8,0.45)" letterSpacing="1.2" fontWeight="500">DEC</text>
-        </svg>
+      <div className="problem-monitor-stat">
+        <span className="problem-monitor-stat-lbl">The invisible tax</span>
+        <div className="problem-monitor-stat-val">
+          <span className="problem-monitor-stat-num">5–10</span>
+          <span className="problem-monitor-stat-unit">pp</span>
+        </div>
+        <span className="problem-monitor-stat-foot">
+          of net margin, hiding in plain view
+        </span>
+        <span className="problem-monitor-ornament" aria-hidden="true">§</span>
       </div>
-    </figure>
+
+      <div className="problem-monitor-scale">
+        <span className="problem-monitor-scale-head">What that looks like</span>
+        <ul className="problem-monitor-scale-list">
+          {SCALE.map((row) => (
+            <li key={row.size} className="problem-monitor-scale-row">
+              <span className="problem-monitor-scale-size">{row.size}</span>
+              <span
+                className="problem-monitor-scale-bar"
+                aria-hidden="true"
+              >
+                <span
+                  className="problem-monitor-scale-bar-fill"
+                  style={{ width: `${row.weight * 100}%` }}
+                />
+              </span>
+              <span className="problem-monitor-scale-range">{row.range}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <footer className="problem-monitor-foot">
+        <span className="problem-monitor-foot-dot" aria-hidden="true" />
+        <span>Compounds year on year.</span>
+      </footer>
+    </aside>
   );
 }
 
@@ -92,13 +85,27 @@ export function Problem() {
           <span className="problem-title-emph">You just can&rsquo;t see where.</span>
         </h2>
 
-        <div className="problem-grid">
-          <p className="problem-lead">
-            Revenue is moving. The team is working. But profit, cash, CAC and
-            retention tell different stories — and none of them line up.
-            Decisions get harder. The cost of guessing goes up.
-          </p>
-          <ProblemArt />
+        <div className="problem-body">
+          <div className="problem-prose">
+            <p>
+              Revenue is moving. The team is working. But profit isn&rsquo;t
+              following. Cash isn&rsquo;t accumulating. CAC looks fine &mdash;
+              but margin keeps eroding. Each metric tells its own story.
+            </p>
+
+            <p>
+              So you start guessing. You scale spend on Monday because the
+              dashboard looks green. By Wednesday you&rsquo;re not sure if you
+              should have. Three weeks later you&rsquo;ve added two more
+              dashboards and you&rsquo;re more confused, not less.
+            </p>
+
+            <p className="problem-prose-final">
+              The longer this goes on, the more expensive guessing becomes.
+            </p>
+          </div>
+
+          <ObservationPanel />
         </div>
       </div>
     </section>
